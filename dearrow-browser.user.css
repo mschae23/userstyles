@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           DeArrow browser
 @namespace      https://mschae23.de
-@version        1.4.0
+@version        1.4.1
 @description    Dark mode for DeArrow browser
 @author         mschae23
 @license        MIT
 @updateURL      https://gist.github.com/mschae23/265c1bcd318e5c75d36a27d63b2b5c79/raw/dearrow-browser.user.css
 ==/UserStyle== */
 
-@-moz-document domain("localhost.minibomba.pro", "dearrow.mschae23.de") {
+@-moz-document domain("localhost.minibomba.pro"), domain("dearrow.mschae23.de") {
     body {
         font-family: sans-serif;
     }
