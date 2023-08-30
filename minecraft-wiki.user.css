@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      https://mschae23.de
-@version        1.2.0
+@version        1.2.1
 @description    Experimenting with the design of the Minecraft Wiki
 @author         mschae23
 @license        MIT
@@ -69,7 +69,7 @@
         border-bottom: none;
         border-left: none;
         padding: 0;
-        height: calc(100% + 5px);
+        height: calc(100% + 4px);
         border: 2px #0b0a0a solid;
     }
     
