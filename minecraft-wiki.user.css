@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      https://mschae23.de
-@version        1.3.0
+@version        1.4.0
 @description    Experimenting with the design of the Minecraft Wiki
 @author         mschae23
 @license        MIT
@@ -10,9 +10,12 @@
 
 @-moz-document domain("mc-dev.weirdgloop.org") {
     body {
+        background-color: #94c1eb;
         background-image: url(https://mschae23.de/media/Minecraft_Wiki_background.png);
         background-attachment: fixed;
         background-repeat: no-repeat;
+        background-position: top left;
+        background-size: cover;
     }
     
     #mw-page-base, div#mw-head {
