@@ -1,0 +1,259 @@
+/* ==UserStyle==
+@name           Minecraft Wiki skin
+@namespace      https://mschae23.de
+@version        1.0.0
+@description    Experimenting with the design of the Minecraft Wiki
+@author         mschae23
+@license        MIT
+==/UserStyle== */
+
+@-moz-document domain("mc-dev.weirdgloop.org") {
+    body {
+        background-image: url(https://mschae23.de/media/Minecraft_Wiki_background.png);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    
+    #mw-page-base, div#mw-head {
+        background: none;
+    }
+    
+    #left-navigation nav.vector-menu-tabs li:first-child::before, nav.vector-menu-tabs ul li::before, nav.vector-menu-dropdown::before {
+        display: none;
+    }
+    
+    nav.vector-menu-tabs ul li.selected, nav.vector-menu-tabs ul li:hover, nav.vector-menu-tabs ul li:focus, nav.vector-menu-dropdown:hover, nav.vector-menu-dropdown:focus, nav.vector-menu-tabs ul li, nav.vector-menu-dropdown, .vector-menu-tabs-legacy li {
+        background: none;
+    }
+    
+    div#content, div#content::before, #footer::before {
+        border-top: none;
+        border-left: none;
+    }
+    
+    #mw-head-base {
+        height: calc(89px + 4px);
+    }
+    
+    #p-search {
+        height: 36px;
+    }
+    
+    .vector-search-box {
+        margin-right: 0;
+    }
+    
+    #p-search > div {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* #p-search > div {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    } */
+    
+    #p-search form::after, #p-search form::before {
+        display: none;
+    }
+    
+    #p-search form {
+        margin-top: 0px;
+        border-bottom: none;
+        border-left: none;
+        padding: 0;
+        height: calc(100% + 5px);
+        border: 2px #0b0a0a solid;
+    }
+    
+    #simpleSearch::before, #simpleSearch::after {
+        display: none;
+    }
+    
+    div#simpleSearch {
+        top: 0;
+    }
+    
+    div#simpleSearch, #simpleSearch:hover {
+        border-left: none !important;
+        border-top: none !important;
+    }
+    
+    div#simpleSearch, .vector-search-box-input {
+        background-color: #343536;
+    }
+    
+    .vector-search-box-input {
+        height: 100%;
+        color: white;
+    }
+    
+    .vector-search-box-input::placeholder {
+        color: lightgray;
+    }
+    
+    .searchButton[name="go"] {
+        color: lightgray;
+    }
+    
+    nav.vector-menu-tabs ul li, nav.vector-menu-dropdown {
+        margin-right: 0;
+    }
+    
+    nav.vector-menu-tabs ul li {
+        border: 2px black solid;
+        background-color: #cfd0d3;
+    }
+    
+    nav.vector-menu-tabs ul li.selected {
+        background-color: #248529;
+    }
+    
+    nav.vector-menu-tabs ul li a {
+        padding: 10px 17px 5px 17px;
+        color: black;
+        border: 2px #dddee0 solid;
+    }
+    
+    #p-namespaces li.selected a, #p-views li.selected a {
+        color: white;
+        border: 2px #58ac56 solid;
+    }
+    
+    #p-logo + .mw-portlet .vector-menu-heading {
+        display: block;
+    }
+    
+    .vector-menu-portal {
+        margin-bottom: 2px;
+        padding: 0;
+        background-color: #494a4b;
+        border: 2px black solid;
+    }
+    
+    nav.vector-menu-portal {
+        margin-top: 0.5em;
+    }
+    
+    .vector-menu-portal .vector-menu-content {
+        background-color: #232324;
+        border: 2px #313233 solid;
+    }
+    
+    .vector-menu-portal .vector-menu-content {
+        margin-left: 0;
+        padding-left: 0.5em;
+    }
+    
+    div#content {
+        border: 2px black solid;
+    }
+    
+    div#mw-panel nav.vector-menu-portal h3 {
+        background: none;
+        padding: 0.5em;
+        border: 2px #686869 solid;
+    }
+    
+    .vector-menu-portal .vector-menu-heading {
+        margin: 0;
+    }
+    
+    nav.vector-menu h3 span {
+        margin-right: 0;
+    }
+    
+    a {
+        color: #27852b;
+    }
+    
+    #p-personal a {
+        color: #107713;
+    }
+    
+    .notaninfobox {
+        border: 2px black solid;
+        padding: 0;
+    }
+    
+    .infobox-title {
+        background-color: #2851ff;
+        border: 2px #5c7bff solid;
+        color: white;
+    }
+    
+    #toc {
+        background-color: #343536;
+        border: 2px black solid;
+        padding: 0;
+    }
+    
+    #toc > * {
+        padding: 7px;
+    }
+    
+    #toc > .toctitle {
+        background-color: #494a4b;
+        border: 2px #727273 solid;
+    }
+    
+    .toctitle > h2 {
+        color: white;
+    }
+    
+    .toctogglelabel {
+        color: #3177e8;
+    }
+    
+    .tocnumber {
+        color: white;
+    }
+    
+    .toctext {
+        color: #34b735;
+    }
+    
+    #toc > ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        border: 2px #313233 solid;
+        background-color: #232324;
+    }
+    
+    #footer {
+        padding: 0;
+        margin-right: 10px;
+    }
+    
+    #footer-info {
+        background-color: #494a4b;
+        border: 2px black solid;
+        border-bottom: 0;
+        padding: 0;
+        padding-left: 0.5em;
+        margin-top: 0.75em;
+    }
+    
+    #footer-places {
+        background-color: #494a4b;
+        border: 2px black solid;
+        border-top: 0;
+        padding: 0;
+        padding-left: 0.5em;
+        margin-top: 0;
+    }
+    
+    #footer-places > li {
+        float: unset;
+        display: inline-block;
+    }
+    
+    #footer-icons {
+    }
+}
