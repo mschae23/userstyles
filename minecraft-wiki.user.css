@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      https://mschae23.de
-@version        1.7.0
+@version        1.8.0
 @description    Experimenting with the design of the Minecraft Wiki
 @author         mschae23
 @license        MIT
@@ -295,25 +295,36 @@
         background-color: #232324;
     } */
     
+    .mw-footer {
+        margin-left: calc(11em + 2px);
+        margin-right: calc(10px + 2px);
+        margin-bottom: calc(10px + 2px);
+    }
+    
     #footer {
         padding: 0;
         margin-top: 0.75em;
-        margin-right: 10px;
-        border: 2px black solid;
+        background-color: #232324;
+        border: 2px #313233 solid;
+        box-shadow: 0 0 0 2px black;
+    }
+    
+    .mw-footer::after {
+        content: "";
+        display: block;
+        clear: both;
+        line-height: 0;
+        width: 100%;
     }
     
     #footer-info {
-        background-color: #232324;
-        border: 2px #313233 solid;
-        border-bottom: 0;
         padding: 0;
         padding-left: 0.5em;
     }
     
     #footer-places {
-        background-color: #232324;
-        border: 2px #313233 solid;
-        border-top: 0;
+        display: inline-block;
+        float: left;
         padding: 0;
         padding-left: 0.5em;
         margin-top: 0;
@@ -325,5 +336,12 @@
     }
     
     #footer-icons {
+        margin-right: 0.5rem;
+    }
+    
+    #footer-icons > li {
+        padding: 0;
+        margin-top: 0.5.rem;
+        margin-bottom: 0.5rem;
     }
 }
