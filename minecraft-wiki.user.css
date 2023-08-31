@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      https://mschae23.de
-@version        1.8.0
+@version        2.0.0
 @description    Experimenting with the design of the Minecraft Wiki
 @author         mschae23
 @license        MIT
@@ -11,11 +11,17 @@
 @-moz-document domain("mc-dev.weirdgloop.org") {
     body {
         background-color: #94c1eb;
-        background-image: url(https://cdn.discordapp.com/attachments/1141982103760801792/1146400955928166420/Desertsunset.png);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: top left;
-        background-size: cover;
+        background-image: url(https://media.discordapp.net/attachments/1141982103760801792/1146818367609651241/tile_rev2.png), url(https://media.discordapp.net/attachments/1141982103760801792/1146818367878078464/stone_tile_rev2.png);
+        /* background-attachment: fixed; */
+        background-repeat: repeat-x, repeat;
+        background-position: top -3em left 0, top left;
+        background-size: auto 37em, calc(37em / 3.125);
+        image-rendering: pixelated;
+    }
+    
+    /* Remove 3D design of skin */
+    body > * {
+        image-rendering: unset;
     }
     
     #mw-page-base, div#mw-head {
@@ -53,27 +59,8 @@
         padding: 0;
     }
     
-    /* #p-search > div {
-        position: relative;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-    } */
-    
     #p-search form::after, #p-search form::before {
         display: none;
-    }
-    
-    #p-search form {
-        margin-top: 0px;
-        border-bottom: none;
-        border-left: none;
-        padding: 0;
-        height: calc(100% + 4px);
-        border: 2px #0b0a0a solid;
     }
     
     #simpleSearch::before, #simpleSearch::after {
@@ -82,6 +69,16 @@
     
     div#simpleSearch {
         top: 0;
+    }
+    
+    /* Style the search field */
+    #p-search form {
+        margin-top: 0px;
+        border-bottom: none;
+        border-left: none;
+        padding: 0;
+        height: calc(100% + 4px);
+        border: 2px #0b0a0a solid;
     }
     
     div#simpleSearch, #simpleSearch:hover {
@@ -106,6 +103,7 @@
         filter: invert(1);
     }
 
+    /* Style the page tabs as buttons */
     nav.vector-menu-tabs ul li, nav.vector-menu-dropdown {
         margin-right: 0;
     }
@@ -162,7 +160,14 @@
         border: 2px #58ac56 solid;
     }
     
+    .vector-menu-tabs .mw-watchlink.icon a::before {
+        left: 1em;
+        top: 0.5em;
+    }
+    
+    /* Style the navigation side bar */
     #p-logo + .mw-portlet .vector-menu-heading {
+        /* Uncomment this line to unhide the "Navigation" header of the first sidebar box */
         /* display: block; */
     }
     
@@ -188,10 +193,6 @@
         padding-left: 0.5em;
     }
     
-    div#content {
-        border: 2px black solid;
-    }
-    
     div#mw-panel nav.vector-menu-portal h3 {
         background: none;
         background-color: #494a4b;
@@ -205,10 +206,6 @@
     
     nav.vector-menu h3 span {
         margin-right: 0;
-    }
-    
-    a {
-        color: #27852b;
     }
     
     #p-personal {
@@ -246,6 +243,28 @@
         color: white;
     }
     
+    .oo-ui-icon-bell, .mw-ui-icon-bell::before, .oo-ui-icon-tray, .mw-ui-icon-tray::before {
+        filter: invert(1);
+    }
+    
+    .vector-user-menu-legacy #pt-anonuserpage, .vector-user-menu-legacy #pt-tmpuserpage, .vector-user-menu-legacy #pt-userpage a {
+        filter: invert(1);
+        color: black;
+    }
+    
+    #pt-notifications-notice .mw-echo-notifications-badge, #pt-notifications-alert .mw-echo-notifications-badge {
+        top: -5px;
+    }
+    
+    /* Style page contents */
+    div#content {
+        border: 2px black solid;
+    }
+    
+    a {
+        color: #27852b;
+    }
+    
     .notaninfobox {
         border: 1px #a2a9b1 solid;
         padding: 0;
@@ -257,6 +276,7 @@
         color: white;
     }
     
+    /* Style the table of contents (currently disabled) */
     /* #toc {
         background-color: #343536;
         border: 2px black solid;
@@ -295,6 +315,7 @@
         background-color: #232324;
     } */
     
+    /* Style the footer */
     .mw-footer {
         margin-left: calc(11em + 2px);
         margin-right: calc(10px + 2px);
