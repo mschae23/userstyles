@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      https://mschae23.de
-@version        2.2.0
+@version        2.2.1
 @description    Experimenting with the design of the Minecraft Wiki
 @author         mschae23
 @license        MIT
@@ -186,6 +186,10 @@
     
     /* Style the "More" dropdown next to the tabs */
     #p-views, #p-cactions {
+        margin-right: 0;
+    }
+    
+    .vector-menu-dropdown .vector-menu-heading {
         margin-right: 0;
     }
     
