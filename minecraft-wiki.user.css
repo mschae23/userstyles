@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      https://mschae23.de
-@version        2.1.0
+@version        2.2.0
 @description    Experimenting with the design of the Minecraft Wiki
 @author         mschae23
 @license        MIT
@@ -185,9 +185,20 @@
     }
     
     /* Style the "More" dropdown next to the tabs */
+    #p-views, #p-cactions {
+        margin-right: 0;
+    }
+    
+    #p-search {
+        margin-left: 8px;
+    }
+    
     nav.vector-menu-dropdown {
         border: 2px black solid;
         background-color: #cfd0d3;
+        margin-right: 0.5em;
+        margin-left: 0;
+        height: 40px;
     }
     
     nav.vector-menu-dropdown:hover {
@@ -205,14 +216,8 @@
         box-shadow: 0 -3px 0px -1px #dfdfe1;
     }
     
-    nav.vector-menu-dropdown::after {
-        display: none;
-        background: none;
-        box-shadow: none;
-    }
-    
-    nav.vector-menu-dropdown a {
-        padding: 7.5px 17px 7.5px 17px;
+    nav.vector-menu-dropdown label {
+        padding: 7.5px 17px 7.5px 17px !important;
         color: black;
         border: 2px #dddee0 solid;
     }
