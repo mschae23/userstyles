@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      https://mschae23.de
-@version        1.6.0
+@version        1.7.0
 @description    Experimenting with the design of the Minecraft Wiki
 @author         mschae23
 @license        MIT
@@ -102,10 +102,10 @@
         color: lightgray;
     }
     
-    .searchButton[name="go"] {
-        color: lightgray;
+    #searchButton {
+        filter: invert(1);
     }
-    
+
     nav.vector-menu-tabs ul li, nav.vector-menu-dropdown {
         margin-right: 0;
     }
@@ -169,17 +169,18 @@
     .vector-menu-portal {
         margin-bottom: 2px;
         padding: 0;
-        background-color: #494a4b;
         border: 2px black solid;
     }
     
     nav.vector-menu-portal {
         margin-top: 0.5em;
+        background-color: #232324;
     }
     
     .vector-menu-portal .vector-menu-content {
         background-color: #232324;
         border: 2px #313233 solid;
+        margin-bottom: 4px;
     }
     
     .vector-menu-portal .vector-menu-content {
@@ -193,6 +194,7 @@
     
     div#mw-panel nav.vector-menu-portal h3 {
         background: none;
+        background-color: #494a4b;
         padding: 0.5em;
         border: 2px #686869 solid;
     }
@@ -209,9 +211,39 @@
         color: #27852b;
     }
     
+    #p-personal {
+        right: 10px;
+        top: 10px;
+        margin-right: 0;
+        margin-left: 0;
+        
+        /* min-width: 5em;
+        width: 20vw;
+        max-width: 20em; */
+        
+        background-color: #494a4b;
+        border: 2px black solid;
+    }
+    
+    #p-personal ul {
+        padding-left: 0;
+    }
+    
+    #p-personal .vector-menu-content-list {
+        background-color: #232324;
+        border: 2px #313233 solid;
+        padding-right: 0.5em;
+        padding-top: 1px;
+        padding-bottom: 2px;
+    }
+    
+    .vector-user-menu-legacy li {
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+    }
+    
     #p-personal a {
-        color: #45ff4b;
-        font-weight: bold;
+        color: white;
     }
     
     .notaninfobox {
