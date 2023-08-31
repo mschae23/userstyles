@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      https://mschae23.de
-@version        1.5.0
+@version        1.6.0
 @description    Experimenting with the design of the Minecraft Wiki
 @author         mschae23
 @license        MIT
@@ -115,21 +115,26 @@
         background-color: #cfd0d3;
     }
     
+    nav.vector-menu-tabs ul li:hover {
+        background-color: #afb0b4;
+    }
+    
     nav.vector-menu-tabs ul li.selected {
         background-color: #248529;
         margin-bottom: 0;
+        margin-top: 4px;
+        height: 36px;
     }
     
     nav.vector-menu-tabs ul li::after {
         content: "";
         position: absolute;
-        bottom: 4px;
+        bottom: 0px;
         left: 0;
         right: 0;
-        height: 2px;
-        background-color: #dfdfe1;
-        box-shadow: 0 2px 0px 0px #666567,
-                    0 4px 0px 0px #363637;
+        height: 4px;
+        background-color: #59585a;
+        box-shadow: 0 -3px 0px -1px #dfdfe1;
     }
     
     nav.vector-menu-tabs ul li.selected::after {
@@ -139,13 +144,17 @@
     }
     
     nav.vector-menu-tabs ul li.selected span {
-        box-shadow: 0px 18px 0px calc((2px - 15px) / 2) white;
+        box-shadow: 0px 16.5px 0px calc((2px - 15px) / 2) white;
     }
     
     nav.vector-menu-tabs ul li a {
-        padding: 10px 17px 5px 17px;
+        padding: 7.5px 17px 7.5px 17px;
         color: black;
         border: 2px #dddee0 solid;
+    }
+    
+    nav.vector-menu-tabs ul li.selected a {
+        padding-bottom: 3.5px;
     }
     
     #p-namespaces li.selected a, #p-views li.selected a {
@@ -201,7 +210,8 @@
     }
     
     #p-personal a {
-        color: #107713;
+        color: #45ff4b;
+        font-weight: bold;
     }
     
     .notaninfobox {
