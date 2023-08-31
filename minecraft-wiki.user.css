@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      https://mschae23.de
-@version        2.0.1
+@version        2.1.0
 @description    Experimenting with the design of the Minecraft Wiki
 @author         mschae23
 @license        MIT
@@ -166,6 +166,57 @@
         top: 0.5em;
     }
     
+    #ca-watch > a {
+        padding: 18px 0px 18px 0px;
+    }
+    
+    @media screen {
+        #ca-watch > a > span {
+            display: none;
+        }
+        
+        #ca-watch > a {
+        }
+    }
+    
+    .vector-menu-tabs .mw-watchlink.icon a {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    
+    /* Style the "More" dropdown next to the tabs */
+    nav.vector-menu-dropdown {
+        border: 2px black solid;
+        background-color: #cfd0d3;
+    }
+    
+    nav.vector-menu-dropdown:hover {
+        background-color: #afb0b4;
+    }
+    
+    nav.vector-menu-dropdown::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background-color: #59585a;
+        box-shadow: 0 -3px 0px -1px #dfdfe1;
+    }
+    
+    nav.vector-menu-dropdown::after {
+        display: none;
+        background: none;
+        box-shadow: none;
+    }
+    
+    nav.vector-menu-dropdown a {
+        padding: 7.5px 17px 7.5px 17px;
+        color: black;
+        border: 2px #dddee0 solid;
+    }
+    
     /* Style the navigation side bar */
     #p-logo + .mw-portlet .vector-menu-heading {
         /* Uncomment this line to unhide the "Navigation" header of the first sidebar box */
@@ -240,6 +291,10 @@
         padding-bottom: 0.3em;
     }
     
+    pt-notifications-alert .vector-user-menu-legacy li, pt-notifications-notice .vector-user-menu-legacy li {
+        padding-bottom: 0;
+    }
+    
     #p-personal a {
         color: white;
     }
@@ -253,8 +308,22 @@
         color: black;
     }
     
+    #pt-notifications-alert, #pt-notifications-notice {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
     #pt-notifications-notice .mw-echo-notifications-badge, #pt-notifications-alert .mw-echo-notifications-badge {
-        top: -5px;
+        top: 0;
+        width: 14px;
+        height: 14px;
+        background-size: 14px 14px;
+    }
+    
+    .vector-user-menu-legacy #pt-anonuserpage, .vector-user-menu-legacy #pt-tmpuserpage, .vector-user-menu-legacy #pt-userpage a {
+        padding-top: 0;
+        background-size: 14px;
+        background-position: unset;
     }
     
     /* Style page contents */
