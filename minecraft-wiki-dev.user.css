@@ -1,0 +1,56 @@
+/* ==UserStyle==
+@name           Minecraft Wiki dev skin with different background
+@namespace      https://mschae23.de
+@version        1.0.0
+@description    Applying oaker258's textures to the dev wiki skin
+@author         mschae23
+@license        MIT
+@updateURL      https://gist.github.com/mschae23/265c1bcd318e5c75d36a27d63b2b5c79/raw/minecraft-wiki-dev.user.css
+==/UserStyle== */
+
+@-moz-document domain("mc-dev.weirdgloop.org") {
+    /* Change background */
+    body {
+        background-color: #94c1eb;
+        background-image: url(https://media.discordapp.net/attachments/1141982103760801792/1147467133148729424/tile_rev5.png), url(https://media.discordapp.net/attachments/1141982103760801792/1147467132876107806/stone_tile_rev3p5.png);
+        /* background-attachment: fixed; */
+        background-repeat: repeat-x, repeat;
+        background-position: top left, top left;
+        background-size: auto 16.5em, 16.5em;
+        image-rendering: pixelated;
+    }
+
+    body > * {
+        image-rendering: unset;
+    }
+    
+    :root {
+        --vector-tabs: url(https://media.discordapp.net/attachments/1141982103760801792/1147467132129521664/Vector-tabs.png);
+        --vector-tabs-first: url(https://media.discordapp.net/attachments/1141982103760801792/1147467132536360980/Vector-tabs-first.png);
+        
+        --vector-tabs-hidpi: url(https://media.discordapp.net/attachments/1141982103760801792/1147467131756236930/Vector_tab_HiDPI.png);
+        --vector-tabs-first-hidpi: url(https://media.discordapp.net/attachments/1141982103760801792/1147467131391315989/Vector_tab_first_HiDPI.png);
+    }
+    
+    /* Remove previous background */
+    #mw-page-base {
+        background: none;
+    }
+    
+    /* Move search bar down */
+    #p-search form {
+        margin-top: -7px;
+    }
+    
+    /* Add black backgrounds to navigation side bar and personal links */
+    nav.vector-menu-portal {
+        background: rgba(0.0, 0.0, 0.0, 0.5);
+    }
+    
+    @media screen {
+        .vector-menu-portal {
+            padding-top: 0;
+            margin-top: 0.25em;
+        }
+    }
+}
