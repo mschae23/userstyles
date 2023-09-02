@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki dev skin with different background
 @namespace      https://mschae23.de
-@version        1.0.0
+@version        1.1.0
 @description    Applying oaker258's textures to the dev wiki skin
 @author         mschae23
 @license        MIT
@@ -52,5 +52,24 @@
             padding-top: 0;
             margin-top: 0.25em;
         }
+    }
+    
+    #p-personal {
+        background: rgba(0.0, 0.0, 0.0, 0.5);
+    }
+    
+    @media screen {
+        #p-personal ul {
+            padding-left: 0;
+        }
+        
+        .vector-user-menu-legacy li {
+            padding: 0.25em;
+            padding-right: 0.5em;
+        }
+    }
+    
+    #p-personal a {
+        color: white;
     }
 }
