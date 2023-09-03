@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      https://mschae23.de
-@version        2.3.0
+@version        2.4.0
 @description    Experimenting with the design of the Minecraft Wiki
 @author         mschae23
 @license        MIT
@@ -47,7 +47,8 @@
     }
     
     #p-search {
-        height: 36px;
+        height: calc(36px - 4px);
+        margin-top: 4px;
     }
     
     .vector-search-box {
