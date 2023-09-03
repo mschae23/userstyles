@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           Minecraft Wiki dev skin with different background
 @namespace      https://mschae23.de
-@version        1.1.0
+@version        1.1.1
 @description    Applying oaker258's textures to the dev wiki skin
 @author         mschae23
 @license        MIT
 @updateURL      https://gist.github.com/mschae23/265c1bcd318e5c75d36a27d63b2b5c79/raw/minecraft-wiki-dev.user.css
 ==/UserStyle== */
 
-@-moz-document domain("mc-dev.weirdgloop.org") {
+@-moz-document domain("mc-dev.weirdgloop.org"), domain("devwikiplsdontleakthis.minecraft.wiki") {
     /* Change background */
     body {
         background-color: #94c1eb;
