@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      https://mschae23.de
-@version        2.4.0
+@version        2.4.1
 @description    Experimenting with the design of the Minecraft Wiki
 @author         mschae23
 @license        MIT
 @updateURL      https://gist.github.com/mschae23/265c1bcd318e5c75d36a27d63b2b5c79/raw/minecraft-wiki.user.css
 ==/UserStyle== */
 
-@-moz-document domain("mc-dev.weirdgloop.org") {
+@-moz-document domain("mc-dev.weirdgloop.org"), domain("devwikiplsdontleakthis.minecraft.wiki") {
     /* Change background */
     body {
         background-color: #94c1eb;
