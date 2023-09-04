@@ -1,0 +1,205 @@
+/* ==UserStyle==
+@name           Minecraft Wiki dev skin 2
+@namespace      https://mschae23.de
+@version        1.0.0
+@description    Applying oaker258's textures to the dev wiki skin and Bedrock-inspired panels
+@author         mschae23
+@license        MIT
+@updateURL      https://gist.github.com/mschae23/265c1bcd318e5c75d36a27d63b2b5c79/raw/minecraft-wiki-dev-bedrock.user.css
+==/UserStyle== */
+
+@-moz-document domain("mc-dev.weirdgloop.org"), domain("devwikiplsdontleakthis.minecraft.wiki") {
+    /* Change background */
+    body {
+        background-color: #94c1eb;
+        background-image: url(https://media.discordapp.net/attachments/1141982103760801792/1147467133148729424/tile_rev5.png), url(https://media.discordapp.net/attachments/1141982103760801792/1147467132876107806/stone_tile_rev3p5.png);
+        /* background-attachment: fixed; */
+        background-repeat: repeat-x, repeat;
+        background-position: top left, top left;
+        background-size: auto 16.5em, 16.5em;
+        image-rendering: pixelated;
+    }
+
+    body > * {
+        image-rendering: unset;
+    }
+    
+    :root {
+        --vector-tabs: url(https://media.discordapp.net/attachments/1141982103760801792/1147467132129521664/Vector-tabs.png);
+        --vector-tabs-first: url(https://media.discordapp.net/attachments/1141982103760801792/1147467132536360980/Vector-tabs-first.png);
+        
+        --vector-tabs-hidpi: url(https://media.discordapp.net/attachments/1141982103760801792/1147467131756236930/Vector_tab_HiDPI.png);
+        --vector-tabs-first-hidpi: url(https://media.discordapp.net/attachments/1141982103760801792/1147467131391315989/Vector_tab_first_HiDPI.png);
+    }
+    
+    /* Remove previous background */
+    #mw-page-base {
+        background: none;
+    }
+    
+    /* Move search bar down */
+    #p-search form {
+        margin-top: -7px;
+    }
+    
+    /* Style the navigation side bar */
+    #p-logo + .mw-portlet .vector-menu-heading {
+        /* Uncomment this line to unhide the "Navigation" header of the first sidebar box */
+        /* display: block; */
+    }
+    
+    .vector-menu-portal {
+        margin-bottom: 2px;
+        padding: 0;
+        border: 2px black solid;
+    }
+    
+    nav.vector-menu-portal {
+        margin-top: 0.5em;
+        background-color: #232324;
+    }
+    
+    .vector-menu-portal .vector-menu-content {
+        background-color: #232324;
+        border: 2px #313233 solid;
+        margin-bottom: 4px;
+    }
+    
+    .vector-menu-portal .vector-menu-content {
+        margin-left: 0;
+        padding-left: 0.5em;
+    }
+    
+    div#mw-panel nav.vector-menu-portal h3 {
+        background: none;
+        background-color: #494a4b;
+        padding: 0.5em;
+        border: 2px #686869 solid;
+    }
+    
+    .vector-menu-portal .vector-menu-heading {
+        margin: 0;
+    }
+    
+    nav.vector-menu h3 span {
+        margin-right: 0;
+    }
+    
+    /* Style the personal links */
+    #p-personal {
+        right: 10px;
+        top: 10px;
+        margin-right: 0;
+        margin-left: 0;
+        
+        /* min-width: 5em;
+        width: 20vw;
+        max-width: 20em; */
+        
+        background-color: #494a4b;
+        border: 2px black solid;
+    }
+    
+    #p-personal ul {
+        padding-left: 0;
+    }
+    
+    #p-personal .vector-menu-content-list {
+        background-color: #232324;
+        border: 2px #313233 solid;
+        padding-right: 0.5em;
+        padding-top: 1px;
+        padding-bottom: 2px;
+    }
+    
+    .vector-user-menu-legacy li {
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+    }
+    
+    pt-notifications-alert .vector-user-menu-legacy li, pt-notifications-notice .vector-user-menu-legacy li {
+        padding-bottom: 0;
+    }
+    
+    #p-personal a {
+        color: white;
+    }
+    
+    .oo-ui-icon-bell, .mw-ui-icon-bell::before, .oo-ui-icon-tray, .mw-ui-icon-tray::before {
+        filter: invert(1);
+    }
+    
+    .vector-user-menu-legacy #pt-anonuserpage, .vector-user-menu-legacy #pt-tmpuserpage, .vector-user-menu-legacy #pt-userpage a {
+        filter: invert(1);
+        color: black;
+    }
+    
+    #pt-notifications-alert, #pt-notifications-notice {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    #pt-notifications-notice .mw-echo-notifications-badge, #pt-notifications-alert .mw-echo-notifications-badge {
+        top: 0;
+        width: 14px;
+        height: 14px;
+        background-size: 14px 14px;
+    }
+    
+    .vector-user-menu-legacy #pt-anonuserpage, .vector-user-menu-legacy #pt-tmpuserpage, .vector-user-menu-legacy #pt-userpage a {
+        padding-top: 0;
+        background-size: 14px;
+        background-position: unset;
+    }
+  
+    /* Style the footer */
+    .mw-footer {
+        margin-left: calc(11em + 2px);
+        margin-right: calc(10px + 2px);
+        margin-bottom: calc(10px + 2px);
+    }
+    
+    #footer {
+        padding: 0;
+        margin-top: 0.75em;
+        background-color: #232324;
+        border: 2px #313233 solid;
+        box-shadow: 0 0 0 2px black;
+    }
+    
+    .mw-footer::after {
+        content: "";
+        display: block;
+        clear: both;
+        line-height: 0;
+        width: 100%;
+    }
+    
+    #footer-info {
+        padding: 0;
+        padding-left: 0.5em;
+    }
+    
+    #footer-places {
+        display: inline-block;
+        float: left;
+        padding: 0;
+        padding-left: 0.5em;
+        margin-top: 0;
+    }
+    
+    #footer-places > li {
+        float: unset;
+        display: inline-block;
+    }
+    
+    #footer-icons {
+        margin-right: 0.5rem;
+    }
+    
+    #footer-icons > li {
+        padding: 0;
+        margin-top: 0.5.rem;
+        margin-bottom: 0.5rem;
+    }
+}
