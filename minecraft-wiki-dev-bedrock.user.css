@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki dev skin 2
 @namespace      https://mschae23.de
-@version        1.2.0
+@version        1.2.1
 @description    Applying oaker258's textures to the dev wiki skin and Bedrock-inspired panels
 @author         mschae23
 @license        MIT
@@ -49,6 +49,7 @@
     }
     
     .vector-menu-portal {
+        margin-bottom: 2px;
         padding: 0;
         border: 2px black solid;
     }
@@ -61,7 +62,6 @@
     .vector-menu-portal .vector-menu-content {
         background-color: #232324;
         border: 2px #313233 solid;
-        margin-bottom: 4px;
     }
     
     .vector-menu-portal .vector-menu-content {
