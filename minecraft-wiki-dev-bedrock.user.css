@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name           Minecraft Wiki dev skin 2
 @namespace      https://mschae23.de
-@version        1.5.0
-@description    Applying oakar258's textures to the dev wiki skin and Bedrock-inspired panels
+@version        1.6.0
+@description    Bedrock-inspired panels on the Minecraft wiki
 @author         mschae23
 @license        MIT
 @updateURL      https://gist.github.com/mschae23/265c1bcd318e5c75d36a27d63b2b5c79/raw/minecraft-wiki-dev-bedrock.user.css
@@ -10,13 +10,15 @@
 
 @-moz-document domain("mc-dev.weirdgloop.org"), domain("devwikiplsdontleakthis.minecraft.wiki") {
     /* Change background */
-    body {
+    /* body {
         background-color: #94c1eb;
         background-image: url(https://media.discordapp.net/attachments/1141982103760801792/1147467133148729424/tile_rev5.png), url(https://media.discordapp.net/attachments/1141982103760801792/1147467132876107806/stone_tile_rev3p5.png);
-        /* background-attachment: fixed; */
         background-repeat: repeat-x, repeat;
         background-position: top left, top left;
         background-size: auto 16.5em, 16.5em;
+    } */
+    
+    body {
         image-rendering: pixelated;
     }
 
@@ -181,11 +183,7 @@
     }
     
     .mw-footer::after {
-        content: "";
-        display: block;
-        clear: both;
-        line-height: 0;
-        width: 100%;
+        display: none;
     }
     
     #footer-info {
@@ -195,7 +193,7 @@
     
     #footer-places {
         display: inline-block;
-        float: left;
+        float: unset;
         padding: 0;
         padding-left: 0.5em;
         margin-top: 0;
@@ -213,6 +211,5 @@
     #footer-icons > li {
         padding: 0;
         margin-top: 0.5.rem;
-        margin-bottom: 0.5rem;
     }
 }
