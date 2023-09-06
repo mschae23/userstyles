@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      https://mschae23.de
-@version        2.6.1
+@version        2.7.0
 @description    Experimenting with the design of the Minecraft Wiki
 @author         mschae23
 @license        MIT
@@ -242,7 +242,6 @@
     .vector-menu-portal .vector-menu-content {
         background-color: #232324;
         border: 2px #313233 solid;
-        margin-bottom: 4px;
     }
     
     .vector-menu-portal .vector-menu-content {
