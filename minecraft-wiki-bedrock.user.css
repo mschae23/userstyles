@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      https://mschae23.de
-@version        2.5.0
+@version        2.6.0
 @description    Experimenting with the design of the Minecraft Wiki
 @author         mschae23
 @license        MIT
@@ -12,16 +12,10 @@
     /* Change background */
     body {
         background-color: #94c1eb;
-        background-image: url(https://media.discordapp.net/attachments/1141982103760801792/1147467133148729424/tile_rev5.png), url(https://media.discordapp.net/attachments/1141982103760801792/1147467132876107806/stone_tile_rev3p5.png);
-        /* background-attachment: fixed; */
-        background-repeat: repeat-x, repeat;
-        background-position: top left, top left;
-        background-size: auto 20em, 20em;
-        image-rendering: pixelated;
-    }
-
-    body > * {
-        image-rendering: unset;
+        background-image: url(https://media.discordapp.net/attachments/1141982103760801792/1146400955928166420/Desertsunset.png);
+        background-attachment: fixed;
+        background-position: top left;
+        background-size: contain;
     }
 
     /* Remove 3D design of skin */
