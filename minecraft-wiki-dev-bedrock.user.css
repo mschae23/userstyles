@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           Minecraft Wiki dev skin 2
 @namespace      https://mschae23.de
-@version        1.6.0
+@version        1.7.0
 @description    Bedrock-inspired panels on the Minecraft wiki
 @author         mschae23
 @license        MIT
 @updateURL      https://gist.github.com/mschae23/265c1bcd318e5c75d36a27d63b2b5c79/raw/minecraft-wiki-dev-bedrock.user.css
 ==/UserStyle== */
 
-@-moz-document domain("mc-dev.weirdgloop.org"), domain("devwikiplsdontleakthis.minecraft.wiki") {
+@-moz-document domain("mc-dev.weirdgloop.org"), domain("minecraft.wiki") {
     /* Change background */
     /* body {
         background-color: #94c1eb;
