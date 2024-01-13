@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DeArrow browser
 @namespace      https://mschae23.de
-@version        1.6.0
+@version        1.7.0
 @description    Dark mode for DeArrow browser
 @author         mschae23
 @license        MIT
@@ -61,5 +61,14 @@
     .icon-link {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
+    }
+    
+    .hoverswitch > span {
+        display: unset !important;
+    }
+    
+    .hoverswitch > span:nth-child(2)::before, .hoverswitch::after {
+        display: inline;
+        content: " | ";
     }
 }
