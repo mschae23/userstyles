@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           SponsorBlock wiki grid
 @namespace      https://mschae23.de
-@version        1.0.1
+@version        1.0.2
 @description    Changes the grid CSS on the SponsorBlock wiki to look like its wikitable
 @author         mschae23
 @license        CC0
@@ -27,6 +27,8 @@
             margin: -1px -1px 0 -1px;
             padding: 0.25rem;
             text-align: center;
+            color: white !important; /* Already !important in underlying CSS, unfortunately */
+            font-size: 100%;
         }
         
         .grid-item > *, .grid-item > p {
