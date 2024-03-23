@@ -1,0 +1,56 @@
+/* ==UserStyle==
+@name           SponsorBlock leaderboard
+@namespace      mschae23.de
+@version        1.0.0
+@description    Style for the SponsorBlock leaderboard like the SB wiki
+@author         mschae23
+@license        MIT
+@updateURL      https://gist.github.com/mschae23/265c1bcd318e5c75d36a27d63b2b5c79/raw/sponsorblock-leaderboard.user.css
+==/UserStyle== */
+
+@-moz-document domain("leaderboard.sbstats.uk") {
+    body, .title-container {
+        background-color: #202124;
+    }
+    
+    .title-container {
+        justify-content: flex-start;
+        border-bottom: #555 1px solid;
+    }
+    
+    .title-container > h1 {
+        margin: 1rem 0;
+    }
+    
+    .themeToggle {
+        display: none;
+    }
+    
+    table {
+        background-color: inherit;
+        box-shadow: unset;
+    }
+    
+    tr:nth-child(2n), tr:nth-child(2n+1) {
+       background-color: inherit;
+    }
+    
+    th, td {
+        border: #555 1px solid;
+        color: #d6d6d6;
+    }
+    
+    th {
+        background-color: #333;
+        color: white;
+        padding: 0.25rem;
+        text-align: center !important; /* Override inline style */
+        font-weight: bold;
+        line-height: 1.6;
+    }
+    
+    td {
+        font-weight: normal;
+        text-align: left;
+    }
+}
