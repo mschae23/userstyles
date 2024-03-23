@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name           SponsorBlock wiki grid
-@namespace      https://mschae23.de
+@namespace      mschae23.de
 @version        1.0.2
 @description    Changes the grid CSS on the SponsorBlock wiki to look like its wikitable
 @author         mschae23
 @license        CC0
-@updateURL      https://gist.github.com/mschae23/265c1bcd318e5c75d36a27d63b2b5c79/raw/sponsorblock-wiki-grid.user.css
+@updateURL      https://github.com/mschae23/userstyles/raw/master/src/sponsorblock-wiki-grid.user.css
 ==/UserStyle== */
 
 @-moz-document domain("wiki.sponsor.ajay.app") {
