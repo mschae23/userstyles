@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           SponsorBlock leaderboard
 @namespace      mschae23.de
-@version        1.0.0
+@version        1.0.2
 @description    Style for the SponsorBlock leaderboard like the SB wiki
 @author         mschae23
 @license        MIT
@@ -12,34 +12,34 @@
     body, .title-container {
         background-color: #202124;
     }
-    
+
     .title-container {
         justify-content: flex-start;
         border-bottom: #555 1px solid;
     }
-    
+
     .title-container > h1 {
         margin: 1rem 0;
     }
-    
+
     .themeToggle {
         display: none;
     }
-    
+
     table {
         background-color: inherit;
         box-shadow: unset;
     }
-    
+
     tr:nth-child(2n), tr:nth-child(2n+1) {
        background-color: inherit;
     }
-    
+
     th, td {
         border: #555 1px solid;
         color: #d6d6d6;
     }
-    
+
     th {
         background-color: #333;
         color: white;
@@ -47,10 +47,15 @@
         text-align: center !important; /* Override inline style */
         font-weight: bold;
         line-height: 1.6;
+        width: unset !important; /* Override inline style */
     }
-    
+
     td {
         font-weight: normal;
         text-align: left;
+    }
+
+    a {
+        color: #d6d6d6;
     }
 }
