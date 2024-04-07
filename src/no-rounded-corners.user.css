@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
-@namespace      mschae23.de
-@version        1.0.2
+@namespace      https://mschae23.de
+@version        1.0.4
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -105,3 +105,11 @@
         border-radius: 50% !important;
     }
 }
+
+@-moz-document domain("addons.mozilla.org") {
+    [dir="ltr"] .PromotedBadge-link--recommended {
+        /* inherit doesn't seem to work */
+        border-left: 1px solid #ff9400;
+    }
+}
+
