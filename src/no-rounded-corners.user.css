@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.0.4
+@version        1.0.5
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -9,7 +9,7 @@
 ==/UserStyle== */
 
 *,
-/* Generic */ .rounded-1, .rounded-2, .rounded-left-1, .rounded-left-2,
+/* Generic */ .rounded, .rounded-1, .rounded-2, .rounded-left-1, .rounded-left-2,
 /* GitHub */ .circle, .avatar-user {
     border-radius: 0 !important;
 }
@@ -18,7 +18,7 @@
     .user-status-circle-badge-container {
         margin-bottom: -50px;
     }
-    
+
     .octicon-feed-tag {
         /* This is a round image, removing border-radius adds a useless black background to it */
         border-radius: var(--borderRadius-full, 50%) !important;
@@ -32,67 +32,67 @@
         background-color: var(--ytd-searchbox-background);
         border: 1px solid var(--ytd-searchbox-legacy-border-color);
     }
-    
+
     yt-chip-cloud-chip-renderer[modern] {
         font-weight: unset;
     }
-    
+
     ytd-guide-entry-renderer img.yt-img-shadow {
         width: auto;
         height: auto;
         max-width: 32px;
     }
-    
+
     yt-img-shadow.ytd-guide-entry-renderer {
         width: 32px;
         height: 32px;
         margin-right: 16px;
     }
-    
+
     ytd-thumbnail[size="large"] a.ytd-thumbnail, ytd-thumbnail[size="large"]::before {
         border-radius: 0;
     }
-    
+
     yt-chip-cloud-renderer:not([no-top-margin]) yt-chip-cloud-chip-renderer.yt-chip-cloud-renderer {
         margin-left: -1px;
         margin-right: -1px;
     }
-    
+
     yt-chip-cloud-renderer:not([no-top-margin]) yt-chip-cloud-chip-renderer.yt-chip-cloud-renderer:first-child {
         margin-left: 0;
     }
-    
+
     yt-chip-cloud-renderer:not([no-top-margin]) yt-chip-cloud-chip-renderer.yt-chip-cloud-renderer:last-child {
         margin-right: 0;
     }
-    
+
     yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected] {
         background-color: var(--yt-spec-text-primary);
         color: var(--yt-spec-text-primary-inverse);
     }
-    
+
     yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"], yt-chip-cloud-chip-renderer[chip-style="STYLE_COLOR_RED"], yt-chip-cloud-chip-renderer[chip-style="STYLE_COLOR_GREEN"], yt-chip-cloud-chip-renderer[chip-style="STYLE_COLOR_BLUE"], yt-chip-cloud-chip-renderer[chip-style="STYLE_REFRESH_TO_NOVEL_CHIP"] {
         background-color: var(--ytd-searchbox-background);
         border: 1px solid var(--ytd-searchbox-legacy-border-color);
     }
-    
+
     .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal {
         background-color: var(--ytd-searchbox-background);
         border: 1px solid var(--ytd-searchbox-legacy-border-color);
     }
-    
+
     .yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--segmented-start::after {
         content: unset;
     }
-    
+
     like-button-view-model button.yt-spec-button-shape-next {
         margin-right: -1px;
     }
-    
+
     dislike-button-view-model button.yt-spec-button-shape-next {
         margin-left: -1px;
     }
-    
+
     #description.ytd-watch-metadata {
         background-color: var(--ytd-searchbox-background);
         border: 1px solid var(--ytd-searchbox-legacy-border-color);
@@ -101,7 +101,7 @@
 
 @-moz-document domain("flaci.com") {
     md-radio-button .md-off, md-radio-button .md-on {
-        /* Radio buttons should remain as circles */
+        /* Radio buttons should remain circles */
         border-radius: 50% !important;
     }
 }
@@ -113,3 +113,9 @@
     }
 }
 
+@-moz-document domain("surveylegend.com") {
+    .sl-radio-button {
+        /* Radio buttons should remain circles */
+        border-radius: 50% !important;
+    }
+}
