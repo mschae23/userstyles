@@ -1,0 +1,121 @@
+/* ==UserStyle==
+@name           Minecraft 15th anniversary restyle
+@namespace      https://mschae23.de
+@version        1.0.0
+@description    Minecraft 15th anniversary restyle
+@author         mschae23
+@license        CC0
+@updateURL      https://mschae23.de/git/mschae23/userstyles/raw/branch/master/src/minecraft-anniversary-15.user.css
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.minecraft.net/en-us/15th-anniversary") {
+    * {
+        text-transform: none !important;
+    }
+    
+    .content-component:has(#sale), .content-component:has(.MC_textBannerB), .content-component:has(#persona) {
+        display: none;
+    }
+    
+    .MC_Draggable, .MC_Timeline_AnniversaryHub_Scrollable {
+        display: none;
+    }
+    
+    .MC_Timeline_AnniversaryHub_ExpandedContent {
+        display: block !important;
+        position: static;
+        transform: unset;
+        padding: 0 24px 24px;
+    }
+    
+    .MC_Accordion_group, .MC_Accordion_toggle {
+        transform: none !important;
+        max-width: unset !important;
+        width: unset !important;
+        position: static !important;
+    }
+    
+    #MC_Timeline_AnniversaryHub .MC_Accordion_group .MC_Accordion_toggle[aria-expanded="false"] {
+        margin: 0;
+    }
+    
+    .MC_Timeline_AnniversaryHub_ExpandedContent {
+        position: static !important;
+        transform: none !important;
+        max-width: unset !important;
+        width: unset !important;
+    }
+    
+    #MC_Timeline_AnniversaryHub .MC_Accordion_toggle[aria-expanded="true"] + .MC_Timeline_AnniversaryHub_ExpandedContent .MC_scrollbar_content_wrapper {
+        height: unset !important;
+        max-height: unset !important;
+    }
+    
+    #MC_Timeline_AnniversaryHub .MC_Accordion_toggle[aria-expanded="false"] .MC_Accordion_toggle_text::after, #MC_Timeline_AnniversaryHub .MC_Accordion_toggle[aria-expanded="true"] .MC_Accordion_toggle_text::after, .MC_Timeline_AnniversaryHub_ReducedAnimation_Checkmark, .MC_Animations_Slime_Bounce, .MC_Animations_Slime_Break::after {
+        display: none;
+    }
+    
+    #MC_Timeline_AnniversaryHub .MC_Accordion_toggle[aria-expanded="true"] .MC_Accordion_toggle_text {
+        margin-left: 72px;
+    }
+    
+    #MC_Timeline_AnniversaryHub .MC_Accordion_group .MC_Accordion_toggle[aria-expanded="false"] .MC_Accordion_toggle_content, #MC_Timeline_AnniversaryHub .MC_Accordion_more .MC_Accordion_toggle_content {
+        max-width: unset;
+        min-width: unset;
+        width: unset;
+        margin: unset;
+    }
+    
+    #MC_Timeline_AnniversaryHub .MC_Accordion_group:not(.MC_Accordion_more) .MC_Accordion_toggle[aria-expanded="true"] {
+        max-width: unset;
+        min-width: unset;
+        position: static;
+        width: unset;
+    }
+    
+    .MC_Accordion_toggle_content p {
+        display: none;
+    }
+    
+    .MC_scrollbar_content {
+        height: unset;
+    }
+    
+    #MC_Timeline_AnniversaryHub .MC_Accordion_toggle[aria-expanded="false"] + .MC_Timeline_AnniversaryHub_ExpandedContent .MC_scrollbar_content_wrapper {
+        height: unset !important;
+        max-height: unset !important;
+    }
+    
+    #MC_Timeline_AnniversaryHub:not(.MC_Timeline_AnniversaryHub__more) .MC_Accordion_group:nth-of-type(n+5):not(.MC_Accordion_group__more) {
+        display: block;
+    }
+    
+    #MC_Timeline_AnniversaryHub .MC_Accordion_toggle {
+        cursor: default;
+        padding: 0;
+    }
+    
+    #MC_Timeline_AnniversaryHub .MC_Accordion_group .MC_Accordion_toggle[aria-expanded="false"], .MC_Accordion_group > button {
+        visibility: hidden;
+    }
+    
+    .MC_Accordion_toggle_content {
+        visibility: visible;
+    }
+    
+    .MC_Accordion_more {
+        display: none;
+    }
+    
+    .MC_Accordion_content {
+        display: none;
+    }
+    
+    #MC_Timeline_AnniversaryHub .MC_Accordion_group .MC_Accordion_toggle[aria-expanded="false"]:hover .MC_Accordion_toggle_text {
+        color: var(--mc-core-grey-2);
+    }
+    
+    #MC_Timeline_AnniversaryHub .MC_Accordion_toggle_blurb, #MC_Timeline_AnniversaryHub .MC_Accordion_toggle_blurb p {
+        font-family: var(--mc-default--fontlist);
+    }
+}
