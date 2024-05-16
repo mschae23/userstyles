@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           Minecraft 15th anniversary restyle
 @namespace      https://mschae23.de
-@version        1.0.0
+@version        1.1.0
 @description    Minecraft 15th anniversary restyle
 @author         mschae23
 @license        CC0
 @updateURL      https://mschae23.de/git/mschae23/userstyles/raw/branch/master/src/minecraft-anniversary-15.user.css
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://www.minecraft.net/en-us/15th-anniversary") {
+@-moz-document regexp("https://www\.minecraft\.net/[a-z\-]+/15th-anniversary") {
     * {
         text-transform: none !important;
     }
@@ -119,3 +119,4 @@
         font-family: var(--mc-default--fontlist);
     }
 }
+
