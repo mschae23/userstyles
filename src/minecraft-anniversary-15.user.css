@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft 15th anniversary restyle
 @namespace      https://mschae23.de
-@version        1.1.0
+@version        1.1.1
 @description    Minecraft 15th anniversary restyle
 @author         mschae23
 @license        CC0
@@ -118,5 +118,10 @@
     #MC_Timeline_AnniversaryHub .MC_Accordion_toggle_blurb, #MC_Timeline_AnniversaryHub .MC_Accordion_toggle_blurb p {
         font-family: var(--mc-default--fontlist);
     }
+    
+    #MC_Timeline_AnniversaryHub .MC_Accordion_group:first-child, #MC_Timeline_AnniversaryHub .MC_Accordion_group:first-child .MC_Accordion_toggle {
+        background-color: #2a2828 !important;
+    }
 }
+
 
