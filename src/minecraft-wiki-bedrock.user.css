@@ -1,18 +1,18 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      mschae23.de
-@version        2.8.0
-@description    Experimenting with the design of the Minecraft Wiki
+@version        3.0.0
+@description    Bedrock panels and buttons for the Minecraft wiki
 @author         mschae23
-@license        MIT
-@updateURL      https://github.com/mschae23/userstyles/raw/master/src/minecraft-wiki-bedrock.user.css
+@license        CC0
+@updateURL      https://mschae23.de/git/mschae23/userstyles/raw/branch/master/src/minecraft-wiki-bedrock.user.css
 ==/UserStyle== */
 
 @-moz-document domain("minecraft.wiki") {
     /* Change background */
     body {
         background-color: #94c1eb;
-        background-image: url(https://media.discordapp.net/attachments/1141982103760801792/1146400955928166420/Desertsunset.png);
+        background-image: url(https://mschae23.de/media/Desertsunset.png);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: top left;
@@ -24,7 +24,7 @@
         background: none;
     }
     
-    #left-navigation nav.vector-menu-tabs li:first-child::before, nav.vector-menu-tabs ul li::before, nav.vector-menu-dropdown::before {
+    #left-navigation nav.vector-menu-tabs li:first-child::before, nav.vector-menu-tabs ul li::before, nav.vector-menu-dropdown::before, #mw-page-base::after, #p-search form::after, #p-search form::before, #simpleSearch::before, #simpleSearch::after {
         display: none;
     }
     
@@ -56,14 +56,6 @@
         padding: 0;
     }
     
-    #p-search form::after, #p-search form::before {
-        display: none;
-    }
-    
-    #simpleSearch::before, #simpleSearch::after {
-        display: none;
-    }
-    
     div#simpleSearch {
         top: 0;
     }
@@ -88,8 +80,11 @@
     }
     
     .vector-search-box-input {
-        height: 100%;
         color: white;
+    }
+    
+    #simpleSearch .vector-search-box-input {
+        height: 100%;
     }
     
     .vector-search-box-input::placeholder {
@@ -138,6 +133,14 @@
         box-shadow: none;
     }
     
+    body.wgl-theme-dark #p-namespaces a, body.wgl-theme-dark #p-views a, body.wgl-theme-dark #p-sharing span, body.wgl-theme-dark #p-cactions-label span, body.wgl-theme-dark div#mw-head div.vectorMenu h4, #p-cactions-label span {
+        color: black;
+    }
+    
+    body.wgl-theme-dark .vector-menu-dropdown .vector-menu-heading::after {
+        filter: unset;
+    }
+    
     nav.vector-menu-tabs ul li.selected span {
         box-shadow: 0px 16.5px 0px calc((2px - 15px) / 2) white;
     }
@@ -146,6 +149,10 @@
         padding: 7.5px 17px 7.5px 17px;
         color: black;
         border: 2px #dddee0 solid;
+    }
+    
+    nav.vector-menu-tabs li a {
+        margin-right: 0;
     }
     
     nav.vector-menu-tabs ul li.selected a {
@@ -183,6 +190,7 @@
     /* Style the "More" dropdown next to the tabs */
     #p-views, #p-cactions {
         margin-right: 0;
+        padding-right: 0;
     }
     
     .vector-menu-dropdown .vector-menu-heading {
@@ -254,6 +262,11 @@
         background-color: #494a4b;
         padding: 0.5em;
         border: 2px #686869 solid;
+    }
+    
+    div#mw-panel nav.vector-menu-portal.collapsed h3 {
+        background-image: unset;
+        border-bottom: 2px #686869 solid;
     }
     
     .vector-menu-portal .vector-menu-heading {
@@ -335,6 +348,10 @@
         border: 2px black solid;
     }
     
+    #content::before, #content::after {
+        display: none;
+    }
+    
     a {
         color: #27852b;
     }
@@ -392,14 +409,14 @@
     /* Style the footer */
     #footer {
         padding: 0;
-        margin-top: 0.75em;
-        margin-left: calc(11em + 2px);
-        margin-right: calc(10px + 2px);
-        margin-bottom: calc(10px + 2px);
+        margin-top: calc(0.75em + 0px);
+        margin-left: calc(11em + 0px);
+        margin-right: calc(10px + 0px);
+        margin-bottom: calc(10px + 0px);
         
         background-color: #232324;
         border: 2px #313233 solid;
-        box-shadow: 0 0 0 2px black;
+        /* box-shadow: 0 0 0 2px black; */
     }
     
     .mw-footer::after {
@@ -438,3 +455,4 @@
         margin-bottom: 0.5rem;
     }
 }
+
