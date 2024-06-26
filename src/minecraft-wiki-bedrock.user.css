@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      mschae23.de
-@version        3.0.0
+@version        3.0.1
 @description    Bedrock panels and buttons for the Minecraft wiki
 @author         mschae23
 @license        CC0
@@ -24,7 +24,7 @@
         background: none;
     }
     
-    #left-navigation nav.vector-menu-tabs li:first-child::before, nav.vector-menu-tabs ul li::before, nav.vector-menu-dropdown::before, #mw-page-base::after, #p-search form::after, #p-search form::before, #simpleSearch::before, #simpleSearch::after {
+    #left-navigation nav.vector-menu-tabs li:first-child::before, nav.vector-menu-tabs ul li::before, nav.vector-menu-dropdown::before, #mw-page-base::after, div#mw-page-base::after, #p-search form::after, #p-search form::before, #simpleSearch::before, #simpleSearch::after {
         display: none;
     }
     
@@ -455,4 +455,5 @@
         margin-bottom: 0.5rem;
     }
 }
+
 
