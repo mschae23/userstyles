@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.0.6
+@version        1.1.0
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -96,6 +96,14 @@
     #description.ytd-watch-metadata {
         background-color: var(--ytd-searchbox-background);
         border: 1px solid var(--ytd-searchbox-legacy-border-color);
+    }
+
+    /* Video hover animation on channel pages (and more, probably) */
+    ytd-rich-item-renderer[rich-grid-hover-highlight] {
+        transition: unset;
+        transition-property: unset;
+        background-color: inherit !important;
+        box-shadow: unset !important;
     }
 }
 
