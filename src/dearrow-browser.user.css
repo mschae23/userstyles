@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           DeArrow browser
 @namespace      mschae23.de
-@version        1.7.1
+@version        1.7.2
 @description    Dark mode for DeArrow browser
 @author         mschae23
 @license        MIT
 @updateURL      https://github.com/mschae23/userstyles/raw/master/src/dearrow-browser.user.css
 ==/UserStyle== */
 
-@-moz-document domain("dearrow.minibomba.pro"), domain("dearrow.mschae23.de") {
+@-moz-document domain("dearrow.minibomba.pro") {
     body {
         font-family: sans-serif;
     }
@@ -50,7 +50,7 @@
         color: #5a5a5a;
     }
 
-    #content[data-route="Home"] td, #content[data-route="Video"] td, #content[data-route="User"] td {
+    #content[data-route="Home"] td, #content[data-route="Video"] td, #content[data-route="User"] td, #content:not(#content[data-route="NotFound"], #content[data-route="NotImplemented"]) td {
         text-align: left;
     }
 
@@ -72,3 +72,4 @@
         content: " | ";
     }
 }
+
