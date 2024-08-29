@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.2.0
+@version        1.2.1
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -176,15 +176,15 @@
         background-color: inherit !important;
     }
     
-    .normal-page__header > .grid > .flex > .flex > .hidden:first-child > .btn-wrapper button[data-v-8a6c59f2-s] {
+    .normal-page__header > .grid > .flex:nth-child(2) > .hidden:first-child > .btn-wrapper button[data-v-8a6c59f2-s] {
         color: var(--color-brand) !important;
     }
     
-    .normal-page__header > .grid > .flex > .flex {
+    .normal-page__header > .grid > .flex:nth-child(2) {
         gap: 0;
     }
     
-    .normal-page__header > .grid > .flex > .flex > * > * {
+    .normal-page__header > .grid > .flex:nth-child(2) > * > * {
         margin-left: -1px;
     }
     
@@ -192,5 +192,10 @@
         border: 1px solid var(--color-button-border);
         background-color: inherit;
     }
+
+    .avatar[data-v-78e239b4] {
+        background-color: inherit;
+    }
 }
+
 
