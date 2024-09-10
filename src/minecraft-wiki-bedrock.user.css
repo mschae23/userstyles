@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      mschae23.de
-@version        3.0.1
+@version        3.0.2
 @description    Bedrock panels and buttons for the Minecraft wiki
 @author         mschae23
 @license        CC0
@@ -23,75 +23,79 @@
     #mw-page-base, div#mw-head {
         background: none;
     }
-    
-    #left-navigation nav.vector-menu-tabs li:first-child::before, nav.vector-menu-tabs ul li::before, nav.vector-menu-dropdown::before, #mw-page-base::after, div#mw-page-base::after, #p-search form::after, #p-search form::before, #simpleSearch::before, #simpleSearch::after {
+
+    #left-navigation nav.vector-menu-tabs li:first-child::before, nav.vector-menu-tabs ul li::before, nav.vector-menu-dropdown::before, #mw-page-base::after, div#mw-page-base::after, #p-search form::after, #p-search form::before, #p-search #searchform .cdx-search-input__input-wrapper::before, #p-search #searchform .cdx-search-input__input-wrapper::after {
         display: none;
     }
-    
+
     nav.vector-menu-tabs ul li.selected, nav.vector-menu-tabs ul li:hover, nav.vector-menu-tabs ul li:focus, nav.vector-menu-dropdown:hover, nav.vector-menu-dropdown:focus, nav.vector-menu-tabs ul li, nav.vector-menu-dropdown, .vector-menu-tabs-legacy li {
         background: none;
     }
-    
+
     div#content, div#content::before, #footer::before {
         border-top: none;
         border-left: none;
     }
-    
+
     #mw-head-base {
         height: calc(89px + 4px);
     }
-    
+
+    /* Style the search field */
     #p-search {
-        height: calc(36px - 4px);
-        margin-top: 4px;
-    }
-    
-    .vector-search-box {
-        margin-right: 0;
-    }
-    
-    #p-search > div {
-        height: 100%;
         margin: 0;
         padding: 0;
     }
-    
-    div#simpleSearch {
-        top: 0;
-    }
-    
-    /* Style the search field */
-    #p-search form {
-        margin-top: 0px;
-        border-bottom: none;
-        border-left: none;
+
+    #p-search #searchform {
+        margin-top: 4px;
         padding: 0;
-        height: calc(100% + 4px);
-        border: 2px #0b0a0a solid;
+        height: 36px;
+        border: 2px #1e1e1f solid;
     }
-    
-    div#simpleSearch, #simpleSearch:hover {
+
+    /* Bedrock has a dark inset at the top of the search bar, but it doesn't really look good here */
+    /* #p-search #searchform::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-top: 4px #242425 solid;
+    } */
+
+    #p-search #searchform .cdx-search-input {
+        height: 36px;
+    }
+
+   .cdx-search-input__input-wrapper, .cdx-search-input__input-wrapper:hover {
         border-left: none !important;
         border-top: none !important;
     }
-    
-    div#simpleSearch, .vector-search-box-input {
-        background-color: #343536;
+
+    #p-search #searchform .cdx-search-input__input-wrapper {
+        top: 0;
     }
-    
-    .vector-search-box-input {
+
+    #p-search #searchform .cdx-search-input__input-wrapper, body.wgl-theme-dark #p-search #searchform .cdx-search-input__input-wrapper {
+        background: #313233;
+    }
+
+    #p-search #searchform .cdx-text-input__input, body.wgl-theme-dark #p-search #searchform .cdx-text-input__input {
+        background: unset;
+    }
+
+    #p-search #searchform .cdx-text-input__input {
         color: white;
+        height: 36px;
     }
-    
-    #simpleSearch .vector-search-box-input {
-        height: 100%;
-    }
-    
-    .vector-search-box-input::placeholder {
+
+    #p-search #searchform .cdx-text-input__input::placeholder {
         color: lightgray;
     }
-    
-    #searchButton {
+
+    #p-search .cdx-button {
         filter: invert(1);
     }
 
@@ -99,23 +103,23 @@
     nav.vector-menu-tabs ul li, nav.vector-menu-dropdown {
         margin-right: 0;
     }
-    
+
     nav.vector-menu-tabs ul li {
-        border: 2px black solid;
+        border: 2px #1e1e1f solid;
         background-color: #cfd0d3;
     }
-    
+
     nav.vector-menu-tabs ul li:hover {
         background-color: #afb0b4;
     }
-    
+
     nav.vector-menu-tabs ul li.selected {
         background-color: #248529;
         margin-bottom: 0;
         margin-top: 4px;
         height: 36px;
     }
-    
+
     nav.vector-menu-tabs ul li::after {
         content: "";
         position: absolute;
@@ -126,93 +130,93 @@
         background-color: #59585a;
         box-shadow: 0 -3px 0px -1px #dfdfe1;
     }
-    
+
     nav.vector-menu-tabs ul li.selected::after {
         display: none;
         background: none;
         box-shadow: none;
     }
-    
+
     body.wgl-theme-dark #p-namespaces a, body.wgl-theme-dark #p-views a, body.wgl-theme-dark #p-sharing span, body.wgl-theme-dark #p-cactions-label span, body.wgl-theme-dark div#mw-head div.vectorMenu h4, #p-cactions-label span {
-        color: black;
+        color: #1e1e1f;
     }
-    
+
     body.wgl-theme-dark .vector-menu-dropdown .vector-menu-heading::after {
         filter: unset;
     }
-    
+
     nav.vector-menu-tabs ul li.selected span {
         box-shadow: 0px 16.5px 0px calc((2px - 15px) / 2) white;
     }
-    
+
     nav.vector-menu-tabs ul li a {
         padding: 7.5px 17px 7.5px 17px;
-        color: black;
+        color: #1e1e1f;
         border: 2px #dddee0 solid;
     }
-    
+
     nav.vector-menu-tabs li a {
         margin-right: 0;
     }
-    
+
     nav.vector-menu-tabs ul li.selected a {
         padding-bottom: 3.5px;
     }
-    
+
     #p-namespaces li.selected a, #p-views li.selected a {
         color: white;
         border: 2px #58ac56 solid;
     }
-    
+
     .vector-menu-tabs .mw-watchlink.icon a::before {
         left: 1em;
         top: 0.5em;
     }
-    
+
     #ca-watch > a {
         padding: 18px 0px 18px 0px;
     }
-    
+
     @media screen {
         #ca-watch > a > span {
             display: none;
         }
-        
+
         #ca-watch > a {
         }
     }
-    
+
     .vector-menu-tabs .mw-watchlink.icon a {
         margin-right: 0;
         margin-bottom: 0;
     }
-    
+
     /* Style the "More" dropdown next to the tabs */
     #p-views, #p-cactions {
         margin-right: 0;
         padding-right: 0;
     }
-    
+
     .vector-menu-dropdown .vector-menu-heading {
         margin-right: 0;
     }
-    
+
     #p-search {
         margin-left: 8px;
     }
-    
+
     nav.vector-menu-dropdown {
-        border: 2px black solid;
+        border: 2px #1e1e1f solid;
         background-color: #cfd0d3;
         margin-right: 0.5em;
         margin-left: 0;
         height: 40px;
     }
-    
+
     nav.vector-menu-dropdown:hover {
         background-color: #afb0b4;
     }
-    
+
     nav.vector-menu-dropdown::after {
         content: "";
         position: absolute;
@@ -223,78 +227,78 @@
         background-color: #59585a;
         box-shadow: 0 -3px 0px -1px #dfdfe1;
     }
-    
+
     nav.vector-menu-dropdown label {
         padding: 7.5px 17px 7.5px 17px !important;
-        color: black;
+        color: #1e1e1f;
         border: 2px #dddee0 solid;
     }
-    
+
     /* Style the navigation side bar */
     #p-logo + .mw-portlet .vector-menu-heading {
         /* Uncomment this line to unhide the "Navigation" header of the first sidebar box */
         /* display: block; */
     }
-    
+
     .vector-menu-portal {
         margin-bottom: 2px;
         padding: 0;
-        border: 2px black solid;
+        border: 2px #1e1e1f solid;
     }
-    
+
     nav.vector-menu-portal {
         margin-top: 0.5em;
         background-color: #232324;
     }
-    
+
     .vector-menu-portal .vector-menu-content {
         background-color: #232324;
         border: 2px #313233 solid;
     }
-    
+
     .vector-menu-portal .vector-menu-content {
         margin-left: 0;
         padding-left: 0.5em;
     }
-    
+
     div#mw-panel nav.vector-menu-portal h3 {
         background: none;
         background-color: #494a4b;
         padding: 0.5em;
         border: 2px #686869 solid;
     }
-    
+
     div#mw-panel nav.vector-menu-portal.collapsed h3 {
         background-image: unset;
         border-bottom: 2px #686869 solid;
     }
-    
+
     .vector-menu-portal .vector-menu-heading {
         margin: 0;
     }
-    
+
     nav.vector-menu h3 span {
         margin-right: 0;
     }
-    
+
     #p-personal {
         right: 10px;
         top: 10px;
         margin-right: 0;
         margin-left: 0;
-        
+
         /* min-width: 5em;
         width: 20vw;
         max-width: 20em; */
-        
+
         background-color: #494a4b;
-        border: 2px black solid;
+        border: 2px #1e1e1f solid;
     }
-    
+
     #p-personal ul {
         padding-left: 0;
     }
-    
+
     #p-personal .vector-menu-content-list {
         background-color: #232324;
         border: 2px #313233 solid;
@@ -302,110 +306,110 @@
         padding-top: 1px;
         padding-bottom: 2px;
     }
-    
+
     .vector-user-menu-legacy li {
         padding-top: 0.3em;
         padding-bottom: 0.3em;
     }
-    
+
     pt-notifications-alert .vector-user-menu-legacy li, pt-notifications-notice .vector-user-menu-legacy li {
         padding-bottom: 0;
     }
-    
+
     #p-personal a {
         color: white;
     }
-    
+
     .oo-ui-icon-bell, .mw-ui-icon-bell::before, .oo-ui-icon-tray, .mw-ui-icon-tray::before {
         filter: invert(1);
     }
-    
+
     .vector-user-menu-legacy #pt-anonuserpage, .vector-user-menu-legacy #pt-tmpuserpage, .vector-user-menu-legacy #pt-userpage a {
         filter: invert(1);
         color: black;
     }
-    
+
     #pt-notifications-alert, #pt-notifications-notice {
         padding-top: 0;
         padding-bottom: 0;
     }
-    
+
     #pt-notifications-notice .mw-echo-notifications-badge, #pt-notifications-alert .mw-echo-notifications-badge {
         top: 0;
         width: 14px;
         height: 14px;
         background-size: 14px 14px;
     }
-    
+
     .vector-user-menu-legacy #pt-anonuserpage, .vector-user-menu-legacy #pt-tmpuserpage, .vector-user-menu-legacy #pt-userpage a {
         padding-top: 0;
         background-size: 14px;
         background-position: unset;
     }
-    
+
     /* Style page contents */
     div#content {
-        border: 2px black solid;
+        border: 2px #1e1e1f solid;
     }
-    
+
     #content::before, #content::after {
         display: none;
     }
-    
+
     a {
         color: #27852b;
     }
-    
+
     .notaninfobox {
         border: 1px #a2a9b1 solid;
         padding: 0;
     }
-    
+
     .infobox-title {
         background-color: #248529;
         border: 2px #58ac56 solid;
         color: white;
     }
-    
+
     /* Style the table of contents (currently disabled) */
     /* #toc {
         background-color: #343536;
-        border: 2px black solid;
+        border: 2px #1e1e1f solid;
         padding: 0;
     }
-    
+
     #toc > * {
         padding: 7px;
     }
-    
+
     #toc > .toctitle {
         background-color: #494a4b;
         border: 2px #727273 solid;
     }
-    
+
     .toctitle > h2 {
         color: white;
     }
-    
+
     .toctogglelabel {
         color: #3177e8;
     }
-    
+
     .tocnumber {
         color: white;
     }
-    
+
     .toctext {
         color: #34b735;
     }
-    
+
     #toc > ul {
         margin-top: 0;
         margin-bottom: 0;
         border: 2px #313233 solid;
         background-color: #232324;
     } */
-    
+
     /* Style the footer */
     #footer {
         padding: 0;
@@ -413,12 +417,12 @@
         margin-left: calc(11em + 0px);
         margin-right: calc(10px + 0px);
         margin-bottom: calc(10px + 0px);
-        
+
         background-color: #232324;
         border: 2px #313233 solid;
-        /* box-shadow: 0 0 0 2px black; */
+        /* box-shadow: 0 0 0 2px #1e1e1f; */
     }
-    
+
     .mw-footer::after {
         content: "";
         display: block;
@@ -426,12 +430,12 @@
         line-height: 0;
         width: 100%;
     }
-    
+
     #footer-info {
         padding: 0;
         padding-left: 0.5em;
     }
-    
+
     #footer-places {
         display: inline-block;
         float: left;
@@ -439,21 +443,19 @@
         padding-left: 0.5em;
         margin-top: 0;
     }
-    
+
     #footer-places > li {
         float: unset;
         display: inline-block;
     }
-    
+
     #footer-icons {
         margin-right: 0.5rem;
     }
-    
+
     #footer-icons > li {
         padding: 0;
         margin-top: 0.5.rem;
         margin-bottom: 0.5rem;
     }
 }
-
-

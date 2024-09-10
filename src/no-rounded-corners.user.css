@@ -139,55 +139,55 @@
         border: 1px solid var(--color-button-border);
         background-color: inherit;
     }
-    
+
     nav.p-1 {
         border: 1px solid var(--color-button-border);
         background-color: inherit;
         padding: 0;
     }
-    
+
     nav > a {
         border: 1px solid var(--color-button-border);
         margin: -1px -2px -1px 1px;
     }
-    
+
     nav > a:first-child {
         margin-left: -1px;
     }
-    
+
     .bg-bg-raised {
         background-color: inherit;
     }
-    
+
     .navtabs-transition {
         display: none;
     }
-    
+
     nav > .router-link-exact-active {
         background-color: var(--color-brand-highlight);
     }
-    
+
     .h-\[calc\(100\%-0\.5rem\)\] {
         height: 100%;
     }
-    
+
     .btn-wrapper button, .btn-wrapper a {
         border: 1px solid var(--color-button-border) !important;
         background-color: inherit !important;
     }
-    
+
     .normal-page__header > .grid > .flex:nth-child(2) > .hidden:first-child > .btn-wrapper button[data-v-8a6c59f2-s] {
         color: var(--color-brand) !important;
     }
-    
+
     .normal-page__header > .grid > .flex:nth-child(2) {
         gap: 0;
     }
-    
+
     .normal-page__header > .grid > .flex:nth-child(2) > * > * {
         margin-left: -1px;
     }
-    
+
     .experimental-styles-within .tag-list__item {
         border: 1px solid var(--color-button-border);
         background-color: inherit;
