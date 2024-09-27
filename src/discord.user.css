@@ -32,3 +32,8 @@ h3.membersGroup_cbd271:has(>span.headerContainer_bc6acb) {
   display: none !important;
 }
 
+/* "Bookmarks", just an ad for Nitro */
+.toolbar_fc4f04 > div[aria-label="Lesezeichen"] {
+  display: none !important;
+}
+
