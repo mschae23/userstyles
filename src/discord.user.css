@@ -33,7 +33,12 @@ h3.membersGroup_cbd271:has(>span.headerContainer_bc6acb) {
 }
 
 /* "Bookmarks", just an ad for Nitro */
-.toolbar_fc4f04 > div[aria-label="Lesezeichen"] {
+div[class^="toolbar"] > div[aria-label="Lesezeichen"] {
+  display: none !important;
+}
+
+/* Useless buttons next to chat input */
+div[class^="channelTextArea"] div[class^="buttons"] > :not(div[class^="expression-picker-chat-input-button"]) {
   display: none !important;
 }
 
