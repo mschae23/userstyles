@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name           Qobuz background
+@namespace      mschae23.de
+@version        1.0.0
+@description    Replaces Qobuz' store wallpaper with a solid color to remove the promotion
+@author         mschae23
+@license        CC0
+@updateURL      https://mschae23.de/git/mschae23/userstyles/raw/branch/master/src/qobuz-background.user.css
+==/UserStyle== */
+
+@-moz-document domain("qobuz.com") {
+    #page_catalog_page {
+        background-color: #eee;
+    }
+    
+    .store-wallpaper {
+        display: none;
+    }
+}
+
