@@ -37,6 +37,10 @@ div[class^="toolbar"] > div[aria-label="Lesezeichen"] {
   display: none !important;
 }
 
+#message-save-for-later-upsell {
+  display: none !important;
+}
+
 /* Useless buttons next to chat input */
 div[class^="channelTextArea"] div[class^="buttons"] > :not(div[class^="expression-picker-chat-input-button"]) {
   display: none !important;
