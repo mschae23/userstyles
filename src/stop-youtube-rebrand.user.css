@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stop YouTube rebrand
 @namespace      https://mschae23.de
-@version        1.1.0
+@version        1.2.0
 @description    Replaces YouTube's new pink branding with the old red
 @author         mschae23
 @license        CC0
@@ -19,6 +19,11 @@
     /* Progress bar in video player */
     .ytp-cairo-refresh-signature-moments .ytp-play-progress {
         background: #ff0000;
+    }
+
+    /* Scrubber button in video player */
+    .ytp-cairo-refresh .ytp-swatch-background-color {
+        background-color: #ff0000;
     }
 
     /* Progress bar on recommended videos */
