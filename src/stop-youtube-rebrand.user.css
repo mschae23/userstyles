@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stop YouTube rebrand
 @namespace      https://mschae23.de
-@version        1.0.0
+@version        1.1.0
 @description    Replaces YouTube's new pink branding with the old red
 @author         mschae23
 @license        CC0
@@ -15,25 +15,39 @@
         --yt-spec-static-overlay-background-brand: rgba(255, 0, 0, 0.9);
         --yt-spec-red-indicator: #ff0000;
     }
-    
+
     /* Progress bar in video player */
     .ytp-cairo-refresh-signature-moments .ytp-play-progress {
         background: #ff0000;
     }
-    
+
     /* Progress bar on recommended videos */
     ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-web] #progress.ytd-thumbnail-overlay-resume-playback-renderer {
         background: #ff0000;
     }
-    
+
     /* Icon in page header */
     #logo-icon svg > g:first-child > path:first-child {
         fill: #ff0000;
     }
-    
+
     /* Icon used as an overlay to the video player while it is loading */
     .ytp-large-play-button.ytp-touch-device .ytp-large-play-button-bg, .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button-bg, .ytp-muted-autoplay-endscreen-overlay:hover .ytp-large-play-button-bg {
         fill: #ff0000;
     }
-}
 
+    /* Remove frosted glass style header */
+    ytd-masthead[frosted-glass="with-chipbar"] #background.ytd-masthead, ytd-masthead[frosted-glass="without-chipbar"] #background.ytd-masthead {
+        backdrop-filter: unset;
+    }
+
+    html[dark], [dark] {
+        --yt-frosted-glass-mobile: rgba(15, 15, 15, 1.0);
+        --yt-frosted-glass-desktop: rgba(15, 15, 15, 1.0);
+    }
+
+    html[light], [light] {
+        --yt-frosted-glass-mobile: rgba(255, 255, 255, 1.0);
+        --yt-frosted-glass-desktop: rgba(255, 255, 255, 1.0);
+    }
+}
