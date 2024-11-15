@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.4.0
+@version        1.4.1
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -136,7 +136,7 @@
 
 @-moz-document domain("flaci.com") {
     md-radio-button .md-off, md-radio-button .md-on {
-        /* Radio buttons should remain circles */
+        /* Radio buttons */
         border-radius: 50% !important;
     }
 }
@@ -150,7 +150,7 @@
 
 @-moz-document domain("surveylegend.com") {
     .sl-radio-button {
-        /* Radio buttons should remain circles */
+        /* Radio buttons */
         border-radius: 50% !important;
     }
 }
@@ -224,3 +224,11 @@
         background-color: inherit;
     }
 }
+
+@-moz-document domain("jetbrains.com") {
+    span[data-test="radio-button-control-root"] > span {
+        /* Radio buttons */
+        border-radius: 50% !important;
+    }
+}
+
