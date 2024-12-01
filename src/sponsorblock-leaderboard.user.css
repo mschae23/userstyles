@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           SponsorBlock leaderboard
 @namespace      mschae23.de
-@version        1.0.3
+@version        1.0.4
 @description    Style for the SponsorBlock leaderboard like the SB wiki
 @author         mschae23
 @license        CC0
@@ -65,6 +65,10 @@
         font-weight: bold;
         line-height: 1.6;
         width: unset !important; /* Override inline style */
+    }
+
+    th a {
+        background-color: inherit;
     }
 
     td {
