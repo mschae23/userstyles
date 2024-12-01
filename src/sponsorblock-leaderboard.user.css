@@ -1,29 +1,46 @@
 /* ==UserStyle==
 @name           SponsorBlock leaderboard
 @namespace      mschae23.de
-@version        1.0.2
+@version        1.0.3
 @description    Style for the SponsorBlock leaderboard like the SB wiki
 @author         mschae23
-@license        MIT
+@license        CC0
 @updateURL      https://github.com/mschae23/userstyles/raw/master/src/sponsorblock-leaderboard.user.css
 ==/UserStyle== */
 
 @-moz-document domain("leaderboard.sbstats.uk") {
-    body, .title-container {
+    *, body, .title-container {
         background-color: #202124;
+        font-family: Arial, sans-serif;
     }
 
     .title-container {
         justify-content: flex-start;
         border-bottom: #555 1px solid;
+        height: unset;
+        padding: 0 20px;
     }
 
-    .title-container > h1 {
+    .title-container h1 {
         margin: 1rem 0;
+        font-size: 2em;
     }
 
-    .themeToggle {
+    .toggle-container, .datePicker {
         display: none;
+    }
+
+    .logo-text-container {
+        gap: 2rem;
+    }
+
+    .SBlogo {
+        height: 50px;
+        width: auto;
+    }
+
+    .title-container a {
+        height: unset;
     }
 
     table {
@@ -58,4 +75,13 @@
     a {
         color: #d6d6d6;
     }
+
+    .attribution {
+        text-align: center;
+        margin-bottom: 10px;
+        color: #a3a3a3;
+        font-size: 12px;
+        line-height: 1.2rem;
+    }
 }
+
