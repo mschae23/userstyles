@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.4.1
+@version        1.4.2
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -22,6 +22,10 @@
     .octicon-feed-tag {
         /* This is a round image, removing border-radius adds a useless black background to it */
         border-radius: var(--borderRadius-full, 50%) !important;
+    }
+
+    dialog > scrollable-region:has(.signed-commit-footer) {
+        padding-top: var(--stack-padding-condensed);
     }
 }
 
