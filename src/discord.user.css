@@ -37,7 +37,12 @@ div[class^="toolbar"] > div[aria-label="Lesezeichen"] {
   display: none !important;
 }
 
-#message-save-for-later-upsell {
+#message-actions-save-for-later-upsell {
+  display: none !important;
+}
+
+/* "Bookmark" button in message hover bar, has no specific attributes other than label */
+div[class*='popoverReactionHoverBar'] > div[aria-label="Nachricht mit Lesezeichen versehen"] {
   display: none !important;
 }
 
