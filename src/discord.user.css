@@ -52,7 +52,7 @@ div[class^="channelTextArea"] div[class^="buttons"] > :not(div[class^="expressio
 }
 
 /* "Discover" button in guild list which is now floating and obscuring guilds */
-div[class^="footer"] {
+nav[class*="guilds"] div[class^="footer"] {
   display: none !important;
 }
 
