@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           SponsorBlock leaderboard
 @namespace      mschae23.de
-@version        1.0.4
+@version        1.0.5
 @description    Style for the SponsorBlock leaderboard like the SB wiki
 @author         mschae23
 @license        CC0
@@ -43,13 +43,22 @@
         height: unset;
     }
 
+    .top-container {
+        padding: 0;
+        margin: 20px 0 4vh 0;
+    }
+
+    .leaderboard {
+        margin-top: 20px;
+    }
+
     table {
         background-color: inherit;
         box-shadow: unset;
     }
 
     tr:nth-child(2n), tr:nth-child(2n+1) {
-       background-color: inherit;
+        background-color: inherit;
     }
 
     th, td {
@@ -88,4 +97,3 @@
         line-height: 1.2rem;
     }
 }
-
