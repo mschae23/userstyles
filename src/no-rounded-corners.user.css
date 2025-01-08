@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.4.3
+@version        1.4.4
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -79,12 +79,12 @@
         margin-bottom: 8px;
     }
 
-    yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected] {
+    :is(yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected]) #chip-container.yt-chip-cloud-chip-renderer {
         background-color: var(--yt-spec-text-primary);
         color: var(--yt-spec-text-primary-inverse);
     }
 
-    yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"], yt-chip-cloud-chip-renderer[chip-style="STYLE_COLOR_RED"], yt-chip-cloud-chip-renderer[chip-style="STYLE_COLOR_GREEN"], yt-chip-cloud-chip-renderer[chip-style="STYLE_COLOR_BLUE"], yt-chip-cloud-chip-renderer[chip-style="STYLE_REFRESH_TO_NOVEL_CHIP"] {
+    :is(yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"], yt-chip-cloud-chip-renderer[chip-style="STYLE_COLOR_RED"], yt-chip-cloud-chip-renderer[chip-style="STYLE_COLOR_GREEN"], yt-chip-cloud-chip-renderer[chip-style="STYLE_COLOR_BLUE"], yt-chip-cloud-chip-renderer[chip-style="STYLE_REFRESH_TO_NOVEL_CHIP"]) #chip-container.yt-chip-cloud-chip-renderer {
         background-color: var(--ytd-searchbox-background);
         border: 1px solid var(--ytd-searchbox-legacy-border-color);
     }
