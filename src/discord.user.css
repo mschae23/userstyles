@@ -42,7 +42,7 @@ div[class^="toolbar"] > div[aria-label="Lesezeichen"] {
   display: none !important;
 }
 
-#message-actions-save-for-later-upsell {
+#message-actions-save-for-later-upsell, #message-save-for-later-upsell {
   display: none !important;
 }
 
