@@ -18,6 +18,11 @@ img[class^='avatarDecoration'], svg[class^='avatarDecoration'] {
   display: none !important;
 }
 
+/* Profile decorations */
+div[class*='profileEffects'] {
+    display: none !important;
+}
+
 /* "Recent activities" */
 div:has(>div>.infoSection_c64476) {
   display: none !important;
