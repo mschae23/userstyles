@@ -60,4 +60,3 @@ div[class^="channelTextArea"] div[class^="buttons"] > :not(div[class^="expressio
 nav[class*="guilds"] div[class^="footer"] {
   display: none !important;
 }
-
