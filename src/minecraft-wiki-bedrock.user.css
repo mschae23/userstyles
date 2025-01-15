@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minecraft Wiki skin
 @namespace      mschae23.de
-@version        3.0.2
+@version        3.1.0
 @description    Bedrock panels and buttons for the Minecraft wiki
 @author         mschae23
 @license        CC0
@@ -69,7 +69,7 @@
         height: 36px;
     }
 
-   .cdx-search-input__input-wrapper, .cdx-search-input__input-wrapper:hover {
+    .cdx-search-input__input-wrapper, .cdx-search-input__input-wrapper:hover {
         border-left: none !important;
         border-top: none !important;
     }
@@ -358,6 +358,11 @@
 
     a {
         color: #27852b;
+    }
+
+    /* Change red links on page buttons to always use light mode color */
+    body.wgl-theme-dark #p-namespaces .new a, body.wgl-theme-dark #p-views .new a {
+        color: #BA0000;
     }
 
     .notaninfobox {
