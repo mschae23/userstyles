@@ -62,6 +62,7 @@ nav[class*="guilds"] div[class^="footer"] {
 }
 
 /* "Edit image with apps" */
-div[class^='imageContainer'] > div[class^='hoverButtonGroup'] {
+div[class^='imageContainer'] > div[class^='hoverButtonGroup'] > div:not([class*='removeMosaicItemHoverButton']),
+div[class^='imageContainer'] > div[class^='hoverButtonGroup']:not(:has(div[class*='removeMosaicItemHoverButton'])) {
     display: none !important;
 }
