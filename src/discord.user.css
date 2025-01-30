@@ -33,7 +33,7 @@ h3.membersGroup_cbd271:has(>span.headerContainer_bc6acb) {
 }
 
 /* "App" button next to message input bar */
-.channelAppLauncher_df39bd {
+div[class^='channelAppLauncher'] {
     display: none !important;
 }
 
