@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name           Remove blurred background on SteamDB
+@namespace      https://mschae23.de
+@version        1.0.0
+@description    Removes the blurred image in the background of SteamDB game pages
+@author         mschae23
+@license        CC0
+@updateURL      https://github.com/mschae23/userstyles/raw/master/src/steamdb-background.user.css
+==/UserStyle== */
+
+@-moz-document domain("steamdb.info") {
+    .header-wrapper::before {
+        content: unset;
+        display: none;
+        background-image: none;
+        filter: none;
+    }
+}
