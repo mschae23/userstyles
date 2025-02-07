@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.4.4
+@version        1.4.5
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -135,6 +135,12 @@
     /* Decrease background size for floating filter bar */
     ytd-masthead[frosted-glass="with-chipbar"] #background.ytd-masthead {
         height: calc(112px - 56px);
+    }
+
+    /* DeArrow */
+    .cbChecklistBox:not(.cbSquare) input, .cbChecklistBox:not(.cbSquare) label {
+        /* Radio buttons */
+        border-radius: 50% !important;
     }
 }
 
