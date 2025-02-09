@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.4.5
+@version        1.4.6
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -9,9 +9,15 @@
 ==/UserStyle== */
 
 *,
-/* Generic */ .rounded, .rounded-1, .rounded-2, .rounded-left-1, .rounded-left-2,
-/* GitHub */ .circle, .avatar-user {
+    /* Generic */ .rounded, .rounded-1, .rounded-2, .rounded-left-1, .rounded-left-2,
+    /* GitHub */ .circle, .avatar-user {
     border-radius: 0 !important;
+}
+
+/* MediaWiki */
+.oo-ui-radioInputWidget [type="radio"] + span {
+    /* Radio buttons */
+    border-radius: 50% !important;
 }
 
 @-moz-document domain("github.com") {
@@ -268,4 +274,3 @@
         border-radius: 50% !important;
     }
 }
-
