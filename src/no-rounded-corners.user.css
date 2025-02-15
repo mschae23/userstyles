@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.4.6
+@version        1.4.7
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -119,6 +119,10 @@
 
     #buttons.ytd-rich-grid-media > .ytd-rich-grid-media {
         margin-bottom: 4px;
+    }
+
+    #masthead > #container > #end > #buttons > ytd-button-renderer button.yt-spec-button-shape-next {
+        border: 1px solid hsl(0,0%,18.82%);
     }
 
     /* Video hover animation on channel pages (and more, probably) */
