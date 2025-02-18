@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.4.7
+@version        1.4.8
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -44,7 +44,7 @@
         margin-left: -1px;
         margin-right: -1px;
         background-color: var(--ytd-searchbox-background);
-        border: 1px solid var(--ytd-searchbox-legacy-border-color);
+        /* border: 1px solid var(--ytd-searchbox-legacy-border-color); */
     }
 
     yt-chip-cloud-chip-renderer[modern] {
