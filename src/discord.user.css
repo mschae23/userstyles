@@ -1,73 +1,83 @@
-/* CC0: This work is dedicated to the public domain. */
+/* ==UserStyle==
+@name           Discord
+@namespace      https://mschae23.de
+@version        1.0.1
+@description    Blocks various unnecessary elements in Discord's interface
+@author         mschae23
+@license        CC0 -- this work is dedicated to the public domain.
+@updateURL      https://github.com/mschae23/userstyles/raw/master/src/discord.user.css
+==/UserStyle== */
 
-/* img[class^="avatar"], div[class^="wrapper"], div[class^="scrollableContainer"], div[class^="button"], div[class^="jumpToPresentBar"], .hljs {
-    border-radius: 0 !important;
-} */
+@-moz-document domain("discord.com") {
+    /* img[class^="avatar"], div[class^="wrapper"], div[class^="scrollableContainer"], div[class^="button"], div[class^="jumpToPresentBar"], .hljs {
+        border-radius: 0 !important;
+    } */
 
-:root {
-    --font-primary: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Apple Color Emoji", sans-serif;
-}
+    :root {
+        --font-primary: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Apple Color Emoji", sans-serif;
+    }
 
-/* Super reactions */
- div[class^="reactions"] > div:has(div[class^="burstGlow"]) {
-    display: none !important;
-}
+    /* Super reactions */
+    div[class^="reactions"] > div:has(div[class^="burstGlow"]) {
+        display: none !important;
+    }
 
-/* Avatar decorations */
-img[class^='avatarDecoration'], svg[class^='avatarDecoration'] {
-    display: none !important;
-}
+    /* Avatar decorations */
+    img[class^='avatarDecoration'], svg[class^='avatarDecoration'] {
+        display: none !important;
+    }
 
-/* Profile decorations */
-div[class*='profileEffects'] {
-    display: none !important;
-}
+    /* Profile decorations */
+    div[class*='profileEffects'] {
+        display: none !important;
+    }
 
-/* "Recent activities" */
-div:has(>div>.infoSection_c64476) {
-    display: none !important;
-}
+    /* "Recent activities" */
+    div:has(>div>.infoSection_c64476) {
+        display: none !important;
+    }
 
-h3.membersGroup_cbd271:has(>span.headerContainer_bc6acb) {
-    display: none !important;
-}
+    h3.membersGroup_cbd271:has(>span.headerContainer_bc6acb) {
+        display: none !important;
+    }
 
-/* "App" button next to message input bar */
-div[class^='channelAppLauncher'] {
-    display: none !important;
-}
+    /* "App" button next to message input bar */
+    div[class^='channelAppLauncher'] {
+        display: none !important;
+    }
 
-/* "Bookmarks", just an ad for Nitro */
-div[class^="toolbar"] > div[aria-label="Lesezeichen"] {
-    display: none !important;
-}
+    /* "Bookmarks", just an ad for Nitro */
+    div[class^="toolbar"] > div[aria-label="Lesezeichen"] {
+        display: none !important;
+    }
 
-#message-actions-save-for-later-upsell, #message-save-for-later-upsell {
-    display: none !important;
-}
+    #message-actions-save-for-later-upsell, #message-save-for-later-upsell {
+        display: none !important;
+    }
 
-/* "Bookmark" button in message hover bar, has no specific attributes other than label */
-div[class*='popoverReactionHoverBar'] > div[aria-label="Nachricht mit Lesezeichen versehen"] {
-    display: none !important;
-}
+    /* "Bookmark" button in message hover bar, has no specific attributes other than label */
+    div[class*='popoverReactionHoverBar'] > div[aria-label="Nachricht mit Lesezeichen versehen"] {
+        display: none !important;
+    }
 
-/* Useless buttons next to chat input */
-div[class^="channelTextArea"] div[class^="buttons"] > :not(div[class^="expression-picker-chat-input-button"]) {
-    display: none !important;
-}
+    /* Useless buttons next to chat input */
+    div[class^="channelTextArea"] div[class^="buttons"] > :not(div[class^="expression-picker-chat-input-button"]) {
+        display: none !important;
+    }
 
-/* "Discover" button in guild list which is now floating and obscuring guilds */
-nav[class*="guilds"] div[class^="footer"] {
-    display: none !important;
-}
+    /* "Discover" button in guild list which is now floating and obscuring guilds */
+    nav[class*="guilds"] div[class^="footer"] {
+        display: none !important;
+    }
 
-/* "Edit image with apps" */
-div[class^='imageContainer'] > div[class^='hoverButtonGroup'] > div:not([class*='removeMosaicItemHoverButton']),
-div[class^='imageContainer'] > div[class^='hoverButtonGroup']:not(:has(div[class*='removeMosaicItemHoverButton'])) {
-    display: none !important;
-}
+    /* "Edit image with apps" */
+    div[class^='imageContainer'] > div[class^='hoverButtonGroup'] > div:not([class*='removeMosaicItemHoverButton']),
+    div[class^='imageContainer'] > div[class^='hoverButtonGroup']:not(:has(div[class*='removeMosaicItemHoverButton'])) {
+        display: none !important;
+    }
 
-/* Shop button */
-div[class*='linkButton'] > a[data-list-item-id*='shop'] {
-    display: none !important;
+    /* Shop button */
+    div[class*='linkButton'] > a[data-list-item-id*='shop'] {
+        display: none !important;
+    }
 }
