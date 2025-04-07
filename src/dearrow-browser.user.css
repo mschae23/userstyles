@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DeArrow browser
 @namespace      mschae23.de
-@version        1.7.3
+@version        1.7.4
 @description    Dark mode for DeArrow browser
 @author         mschae23
 @license        MIT
@@ -44,6 +44,7 @@
     input, textarea {
         background-color: #111111;
         color: #b1b1b1;
+        height: 1.5em;
     }
 
     input::placeholder, textarea::placeholder {
@@ -76,4 +77,3 @@
         content: " | ";
     }
 }
-
