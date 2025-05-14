@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Discord
 @namespace      https://mschae23.de
-@version        1.1.0
+@version        1.2.0
 @description    Blocks various unnecessary elements in Discord's interface
 @author         mschae23
 @license        CC0 -- this work is dedicated to the public domain.
@@ -83,6 +83,11 @@
 
     /* Nameplates in member list */
     div[class^='member'] > div[class*='nameplated'] > :not(div[class^='memberInner']) {
+        display: none !important;
+    }
+
+    /* Clan tags */
+    span[id^='message-username'] > span:has(span[class*='clanTagChiplet']) {
         display: none !important;
     }
 }
