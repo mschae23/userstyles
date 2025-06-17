@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.4.9
+@version        1.4.10
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -186,6 +186,30 @@
         --color-button-border: rgba(193,190,209,.12);
     }
 
+    .btn-wrapper {
+        --_bg: var(--color-base) !important;
+        --_text: var(--color-text-dark) !important;
+        --_hover-text: var(--color-button-text-selected) !important;
+    }
+
+    .btn-wrapper[style^='--_bg: var(--color-brand)'], .btn-wrapper[style^='--_bg:var(--color-brand)'] {
+        --_text: var(--color-brand) !important;
+    }
+
+    .btn.btn-primary, .brand-button {
+        --_text-color: var(--color-brand);
+        --_background-color: inherit;
+        --_accent-color: var(--color-brand);
+        border: 1px solid var(--color-button-border);
+
+        --background-color: var(--_background-color);
+        --text-color: var(--_text-color);
+    }
+
+    .brand-button[data-v-2346213e] {
+        color: var(--_text-color);
+    }
+
     .card, .ad-parent, .base-card, .raised-button, .iconified-button {
         border: 1px solid var(--color-button-border);
         background-color: inherit;
@@ -222,22 +246,15 @@
         height: 100%;
     }
 
-    .btn-wrapper button, .btn-wrapper a {
+    .btn-wrapper :is(button, a, .button-like):first-child, .btn-wrapper [data-v-87b8daac-s] > :first-child > :first-child > :is(button, a, .button-like):first-child, .btn-wrapper [data-v-87b8daac-s] > :first-child > :is(button, a, .button-like):first-child, .btn-wrapper [data-v-87b8daac-s] > :is(button, a, .button-like):first-child, .btn-wrapper :is(button, a, .button-like):first-child {
         border: 1px solid var(--color-button-border) !important;
         background-color: inherit !important;
     }
 
-    .normal-page__header > .grid > .flex:nth-child(2) > .hidden:first-child > .btn-wrapper button {
-        color: var(--color-brand);
-    }
-
-    .normal-page__header > .grid > .flex:nth-child(2) > .hidden:first-child > .btn-wrapper button svg {
-        stroke: var(--color-brand);
-    }
-
-    .brand-button {
-        color: var(--color-brand);
-    }
+    /* .flex.flex-wrap > :is(button, div) {
+        border: 1px solid var(--color-button-border);
+        background-color: inherit;
+    } */
 
     .normal-page__header > .grid > .flex:nth-child(2) {
         gap: 0;

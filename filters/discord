@@ -28,6 +28,7 @@ discord.com##div[class^="toolbar"] > div[aria-label="Lesezeichen"]
 
 discord.com###message-actions-save-for-later-upsell
 discord.com###message-save-for-later-upsell
+discord.com###message-save-for-later
 
 !! "Bookmark" button in message hover bar, has no specific attributes other than label
 discord.com##div[class*='popoverReactionHoverBar'] > div[aria-label="Nachricht mit Lesezeichen versehen"]
