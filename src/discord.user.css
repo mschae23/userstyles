@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Discord
 @namespace      https://mschae23.de
-@version        1.3.0
+@version        1.3.1
 @description    Blocks various unnecessary elements in Discord's interface
 @author         mschae23
 @license        CC0 -- this work is dedicated to the public domain.
@@ -92,7 +92,7 @@
     }
 
     /* Gradient role colors */
-    span[class*='threeColorGradient'] {
+    span[class*='usernameGradient'] {
         background: var(--custom-color-gradient-1);
     }
 }
