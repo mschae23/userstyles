@@ -1,0 +1,31 @@
+/* ==UserStyle==
+@name           Abolish title case
+@namespace      mschae23.de
+@version        1.0.1
+@description    Replace Title Case with Sentence case
+@author         mschae23
+@license        CC0 -- this work is dedicated to the public domain.
+@updateURL      https://github.com/mschae23/userstyles/raw/master/src/abolish-title-case.user.css
+==/UserStyle== */
+
+@-moz-document domain("hard-drive.net"), domain("theonion.com") {
+    h1, h2, h3, h2 > a, h3 > a {
+        text-transform: lowercase;
+        display: inline-block;
+    }
+
+    h1::first-letter, h2::first-letter, h3::first-letter, h2 > a::first-letter, h3 > a::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+@-moz-document domain("theonion.com") {
+    a, .onion-part-header-container__section-top p em, div:has(> #h-the-onion-sending-emails-for-over-a-hundred-years) > p {
+        text-transform: lowercase;
+        display: inline-block;
+    }
+
+    a::first-letter, .onion-part-header-container__section-top p em::first-letter, div:has(> #h-the-onion-sending-emails-for-over-a-hundred-years) > p::first-letter {
+        text-transform: uppercase;
+    }
+}
