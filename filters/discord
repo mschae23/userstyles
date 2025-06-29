@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Block Discord stuff
-! Last modified: 2025-06-27
+! Last modified: 2025-06-29
 ! Expires: 7 days
 ! Homepage: https://code.mschae23.de/mschae23/userstyles
 ! License: CC0
@@ -52,6 +52,7 @@ discord.com##div[class^='member'] > div[class*='nameplated'] > :not(div[class^='
 !! Clan tags
 discord.com##:is(span[id^='message-username'], div[id^='message-reply-context']) > span:has(span[class*='clanTagChiplet'])
 discord.com##span[class^='username'] > span[class*='clanTag']
+discord.com##div[class^='voiceUser'] div[class^='chipletParent']
 
 !! Gradient role colors
 discord.com##span[class*='usernameGradient']:style(background: var(--custom-color-gradient-1) !important)
