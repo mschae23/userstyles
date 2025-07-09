@@ -55,7 +55,8 @@ discord.com##span[class^='username'] > span[class*='clanTag']
 discord.com##div[class^='voiceUser'] div[class^='chipletParent']
 
 !! Gradient role colors
-discord.com##span[class*='usernameGradient']:style(background: var(--custom-color-gradient-1) !important)
+discord.com##[class*='Gradient']:style(background-color: var(--custom-gradient-color-1) !important)
+discord.com##[class*='convenienceGlow']::after
 
 !! Status text field in profile
 discord.com##:is(header, div[class^='profileHeader']) div[class^='container'] svg[class^='addStatusIcon']:upward(3)
