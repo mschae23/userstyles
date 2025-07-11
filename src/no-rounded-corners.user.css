@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.4.11
+@version        1.5.0
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -145,6 +145,11 @@
     /* Decrease background size for floating filter bar */
     ytd-masthead[frosted-glass="with-chipbar"] #background.ytd-masthead {
         height: calc(112px - 56px);
+    }
+
+    /* Full page width on /watch pages */
+    ytd-watch-flexy[flexy][use-larger-max-player-value]:not([full-bleed-player][full-bleed-no-max-width-columns]) #columns.ytd-watch-flexy, ytd-watch-flexy[flexy][is-two-columns_][is-extra-wide-video_]:not([full-bleed-player][full-bleed-no-max-width-columns]):not([fixed-panels]) #primary.ytd-watch-flexy, ytd-watch-flexy[flexy][is-two-columns_][is-four-three-to-sixteen-nine-video_]:not([full-bleed-player][full-bleed-no-max-width-columns]):not([fixed-panels]) #primary.ytd-watch-flexy {
+        max-width: unset;
     }
 
     /* DeArrow */
