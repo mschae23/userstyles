@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Block Discord stuff
-! Last modified: 2025-07-08
+! Last modified: 2025-07-24
 ! Expires: 7 days
 ! Homepage: https://code.mschae23.de/mschae23/userstyles
 ! License: CC0
@@ -55,7 +55,7 @@ discord.com##span[class^='username'] > span[class*='clanTag']
 discord.com##div[class^='voiceUser'] div[class^='chipletParent']
 
 !! Gradient role colors
-discord.com##[class*='Gradient']:style(background-color: var(--custom-gradient-color-1) !important)
+discord.com##[class*='usernameGradient']:style(background: var(--custom-gradient-color-1) !important; background-clip: text !important)
 discord.com##[class*='convenienceGlow']::after
 
 !! Status text field in profile
