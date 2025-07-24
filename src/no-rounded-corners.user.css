@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.5.0
+@version        1.6.0
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -187,6 +187,11 @@
 }
 
 @-moz-document domain("modrinth.com") {
+    /* Popups */
+    .v-popper--theme-tooltip .v-popper__inner {
+        border-radius: 0 !important;
+    }
+
     .dark, .dark-mode {
         --color-button-border: rgba(193,190,209,.12);
     }
