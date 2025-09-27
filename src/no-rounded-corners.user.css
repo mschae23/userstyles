@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.7.0
+@version        1.7.1
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -116,6 +116,10 @@
     #description.ytd-watch-metadata, ytd-rich-metadata-renderer {
         background-color: var(--ytd-searchbox-background);
         border: 1px solid var(--ytd-searchbox-legacy-border-color);
+    }
+
+    [data-darkreader-mode="dynamic"] #description.ytd-watch-metadata, [data-darkreader-mode="dynamic"] ytd-rich-metadata-renderer {
+        background-color: var(--darkreader-background-ffffff) !important;
     }
 
     #buttons.ytd-rich-grid-media > .ytd-rich-grid-media {
