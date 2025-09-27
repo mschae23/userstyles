@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.6.2
+@version        1.6.3
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -308,6 +308,13 @@
 
 @-moz-document domain("surveyhero.com") {
     .radio-btn {
+        /* Radio buttons */
+        border-radius: 50% !important;
+    }
+}
+
+@-moz-document domain("gog.com") {
+    .edition-picker-list__checkbox {
         /* Radio buttons */
         border-radius: 50% !important;
     }
