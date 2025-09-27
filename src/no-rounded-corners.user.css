@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.6.3
+@version        1.6.4
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -123,7 +123,7 @@
     }
 
     #masthead > #container > #end > #buttons > ytd-button-renderer button.yt-spec-button-shape-next {
-        border: 1px solid hsl(0,0%,18.82%);
+        border: 1px solid hsl(0, 0%, 18.82%);
     }
 
     /* Video hover animation on channel pages (and more, probably) */
@@ -149,7 +149,8 @@
     }
 
     /* Full page width on /watch pages */
-    ytd-watch-flexy[flexy][use-larger-max-player-value]:not([full-bleed-player][full-bleed-no-max-width-columns]) #columns.ytd-watch-flexy, ytd-watch-flexy[flexy][is-two-columns_][is-extra-wide-video_]:not([full-bleed-player][full-bleed-no-max-width-columns]):not([fixed-panels]) #primary.ytd-watch-flexy, ytd-watch-flexy[flexy][is-two-columns_][is-four-three-to-sixteen-nine-video_]:not([full-bleed-player][full-bleed-no-max-width-columns]):not([fixed-panels]) #primary.ytd-watch-flexy {
+    ytd-watch-flexy[flexy][use-larger-max-player-value]:not([full-bleed-player][full-bleed-no-max-width-columns]) #columns.ytd-watch-flexy, ytd-watch-flexy[flexy][is-two-columns_][is-extra-wide-video_]:not([full-bleed-player][full-bleed-no-max-width-columns]):not([fixed-panels]) #primary.ytd-watch-flexy, ytd-watch-flexy[flexy][is-two-columns_][is-four-three-to-sixteen-nine-video_]:not([full-bleed-player][full-bleed-no-max-width-columns]):not([fixed-panels]) #primary.ytd-watch-flexy,
+    ytd-watch-flexy[is-two-columns_][is-extra-wide-video_]:not([full-bleed-player][full-bleed-no-max-width-columns]):not([fixed-panels]) #primary.ytd-watch-flexy, ytd-watch-flexy[is-two-columns_][is-four-three-to-sixteen-nine-video_]:not([full-bleed-player][full-bleed-no-max-width-columns]):not([fixed-panels]) #primary.ytd-watch-flexy {
         max-width: unset;
     }
 
