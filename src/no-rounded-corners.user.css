@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.6.4
+@version        1.7.0
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -158,6 +158,24 @@
     .cbChecklistBox:not(.cbSquare) input, .cbChecklistBox:not(.cbSquare) label {
         /* Radio buttons */
         border-radius: 50% !important;
+    }
+
+    /* NekoCap-Native userstyle */
+    html #nekocap-menu-container > div > div > .ant-dropdown-trigger, html #nekocap-menu-container > .scoped-antd > div > .ant-spin-nested-loading > .ant-spin-container > .ant-select > .ant-select-selector, html button.ant-btn,
+    html #nekocap-menu-container > .scoped-antd > div > .ant-spin-nested-loading > .ant-spin-container > .ant-select > .ant-select-selector,
+    html #nekocap-menu-container > .scoped-antd button {
+        background-color: var(--ytd-searchbox-background) !important;
+        border: 1px solid var(--ytd-searchbox-legacy-border-color) !important; /* Already !important in original CSS */
+    }
+
+    html #nekocap-menu-container > div > div > .ant-dropdown-trigger:hover, html #nekocap-menu-container > .scoped-antd > div > .ant-spin-nested-loading > .ant-spin-container > .ant-select > .ant-select-selector:hover, html button.ant-btn:hover,
+    html #nekocap-menu-container > .scoped-antd > div > .ant-spin-nested-loading > .ant-spin-container > .ant-select > .ant-select-selector:hover,
+    html #nekocap-menu-container > .scoped-antd button:hover {
+        background-color: rgba(255, 255, 255, 0.2) !important;
+    }
+
+    #nekocap-menu-container :where(.css-1eaxa9r).ant-select-single.ant-select-open .ant-select-selection-item {
+        color: #f1f1f1;
     }
 }
 
