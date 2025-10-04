@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.7.1
+@version        1.8.0
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -39,6 +39,11 @@
 @-moz-document domain("youtube.com") {
     .ytp-menuitem-toggle-checkbox::after, .ytp-big-mode .ytp-menuitem-toggle-checkbox::after {
         border-radius: 0;
+    }
+
+    .ytp-delhi-modern .ytp-button::after, .ytp-delhi-modern.ytp-delhi-horizontal-volume-controls .ytp-volume-area::after, .ytp-delhi-modern .ytp-time-wrapper:not(.ytp-miniplayer-ui *)::after,
+    .ytp-delhi-modern .ytp-chrome-controls .ytp-right-controls .ytp-button::before {
+        border-radius: 0 !important;
     }
 
     yt-chip-cloud-chip-renderer.ytd-feed-filter-chip-bar-renderer {
@@ -156,6 +161,11 @@
     ytd-watch-flexy[flexy][use-larger-max-player-value]:not([full-bleed-player][full-bleed-no-max-width-columns]) #columns.ytd-watch-flexy, ytd-watch-flexy[flexy][is-two-columns_][is-extra-wide-video_]:not([full-bleed-player][full-bleed-no-max-width-columns]):not([fixed-panels]) #primary.ytd-watch-flexy, ytd-watch-flexy[flexy][is-two-columns_][is-four-three-to-sixteen-nine-video_]:not([full-bleed-player][full-bleed-no-max-width-columns]):not([fixed-panels]) #primary.ytd-watch-flexy,
     ytd-watch-flexy[is-two-columns_][is-extra-wide-video_]:not([full-bleed-player][full-bleed-no-max-width-columns]):not([fixed-panels]) #primary.ytd-watch-flexy, ytd-watch-flexy[is-two-columns_][is-four-three-to-sixteen-nine-video_]:not([full-bleed-player][full-bleed-no-max-width-columns]):not([fixed-panels]) #primary.ytd-watch-flexy {
         max-width: unset;
+    }
+
+    .ytp-popup.ytp-delhi-modern-contextmenu {
+        backdrop-filter: none;
+        background: black;
     }
 
     /* DeArrow */
