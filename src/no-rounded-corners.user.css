@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.8.0
+@version        1.8.1
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -165,7 +165,7 @@
 
     .ytp-popup.ytp-delhi-modern-contextmenu {
         backdrop-filter: none;
-        background: black;
+        background: var(--yt-spec-base-background);
     }
 
     /* DeArrow */
