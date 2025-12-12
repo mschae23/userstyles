@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stop YouTube rebrand
 @namespace      https://mschae23.de
-@version        1.3.1
+@version        1.4.0
 @description    Replaces YouTube's new pink branding with the old red
 @author         mschae23
 @license        CC0
@@ -44,6 +44,11 @@
     /* Notification number background  */
     .yt-spec-icon-badge-shape--type-notification-refresh .yt-spec-icon-badge-shape__badge {
         background-color: #ff0000;
+    }
+
+    /* Watch progress bar in recommendations */
+    .ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment {
+        background: #ff0000;
     }
 
     /* Remove frosted glass style header */
