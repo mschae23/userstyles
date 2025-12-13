@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Discord
 @namespace      https://mschae23.de
-@version        1.4.2
+@version        1.5.0
 @description    Blocks various unnecessary elements in Discord's interface
 @author         mschae23
 @license        CC0 -- this work is dedicated to the public domain.
@@ -103,6 +103,11 @@
 
     /* Status text field in profile */
     :is(header, div[class^='profileHeader'], .user-profile-popout) div[class^='container']:has(svg[class^='addStatusIcon']) {
+        display: none !important;
+    }
+
+    /* Voice chat border glow */
+    div[class^='voiceChannelHighlightGlow'] {
         display: none !important;
     }
 }
