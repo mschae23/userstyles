@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Discord
 @namespace      https://mschae23.de
-@version        1.5.0
+@version        1.5.1
 @description    Blocks various unnecessary elements in Discord's interface
 @author         mschae23
 @license        CC0 -- this work is dedicated to the public domain.
@@ -87,7 +87,11 @@
     }
 
     /* Clan tags */
-    :is(span[id^='message-username'], div[id^='message-reply-context']) > span:has(span[class*='clanTagChiplet']), span[class^='username'] > span[class*='clanTag'], div[class^='voiceUser'] div[class^='chipletParent'] {
+    :is(span[id^='message-username'],
+    div[id^='message-reply-context']) > span:has(span[class*='clanTagChiplet']),
+    span[class^='username'] > span[class*='clanTag'],
+    div[class^='voiceUser'] div[class^='chipletParent']
+    div[class^='nameAndDecorators'] span[class^='chipletContainer'] {
         display: none !important;
     }
 
@@ -106,7 +110,7 @@
         display: none !important;
     }
 
-    /* Voice chat border glow */
+    /* Voice channel border glow */
     div[class^='voiceChannelHighlightGlow'] {
         display: none !important;
     }
