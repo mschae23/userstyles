@@ -6,11 +6,11 @@
 ! License: CC0
 
 !! Super reactions
-discord.com##div[class^="reactions"] > div:has(div[class^="burstGlow"])
+discord.com##div[class*="reactions"] > div:has(div[class*="burstGlow"])
 
 !! Avatar decorations
-discord.com##img[class^='avatarDecoration']
-discord.com##svg[class^='avatarDecoration']
+discord.com##img[class*='avatarDecoration']
+discord.com##svg[class*='avatarDecoration']
 
 !! Profile decorations
 discord.com##div[class*='profileEffects']
@@ -21,47 +21,47 @@ discord.com##div[class*='infoSection']:upward(2)
 discord.com##h3[class*='membersGroup']:has(> span[class*='headerContainer'])
 
 !! "App" button next to message input bar
-discord.com##div[class^='channelAppLauncher']
+discord.com##div[class*='channelAppLauncher']
 
 !! "Bookmarks", just an ad for Nitro
-discord.com##div[class^="toolbar"] > div[aria-label="Lesezeichen"]
+discord.com##div[class*="toolbar"] > div[aria-label="Lesezeichen"]
 
 discord.com###message-actions-save-for-later-upsell
 discord.com###message-save-for-later-upsell
 discord.com###message-save-for-later
 
 !! "Bookmark" button in message hover bar, has no specific attributes other than label
-discord.com##div[class*='popoverReactionHoverBar'] > div[aria-label="Nachricht mit Lesezeichen versehen"]
+discord.com##div[class*='-message'] div[class*='buttonsInner'] > div[aria-label="Nachricht mit Lesezeichen versehen"]
 
 !! Useless buttons next to chat input
-discord.com##div[class^="channelTextArea"] div[class^="buttons"] > :not(div[class^="expression-picker-chat-input-button"])
+discord.com##div[class*="channelTextArea"] div[class*="buttons"] > :not(div[class^="expression-picker-chat-input-button"])
 
 !! "Discover" button in guild list which is now floating and obscuring guilds
-discord.com##nav[class*="guilds"] div[class^="footer"]
+discord.com##nav[class*="guilds"] div[class*="footer"]
 
 !! "Edit image with apps"
-discord.com##div[class^='imageContainer'] > div[class^='hoverButtonGroup'] > div:not([class*='removeMosaicItemHoverButton'])
-discord.com##div[class^='imageContainer'] > div[class^='hoverButtonGroup']:not(:has(div[class*='removeMosaicItemHoverButton']))
+discord.com##div[class*='imageContainer'] > div[class*='hoverButtonGroup'] > div:not([class*='removeMosaicItemHoverButton'])
+discord.com##div[class*='imageContainer'] > div[class*='hoverButtonGroup']:not(:has(div[class*='removeMosaicItemHoverButton']))
 
 !! Shop button
 discord.com##div[class*='linkButton'] > a[data-list-item-id*='shop']
 
 !! Nameplates in member list
-discord.com##div[class*='member'] > div[class$='nameplated'] > :not(div[class^='memberInner'])
+discord.com##div[class*='member'] > div[class*='nameplated'] > :not(div[class*='memberInner'])
 ||https://cdn.discordapp.com/assets/collectibles/nameplates/
 
 !! Clan tags
 discord.com##:is(span[id^='message-username'], div[id^='message-reply-context']) > span:has(span[class*='clanTagChiplet'])
-discord.com##span[class^='username'] > span[class*='clanTag']
-discord.com##div[class^='voiceUser'] div[class^='chipletParent']
-discord.com##div[class^='nameAndDecorators'] span[class^='chipletContainer']
+discord.com##span[class*='username'] > span[class*='clanTag']
+discord.com##div[class*='voiceUser'] div[class*='chipletParent']
+discord.com##div[class*='nameAndDecorators'] span[class*='chipletContainer']
 
 !! Gradient role colors
 discord.com##[class*='usernameGradient']:style(background: var(--custom-gradient-color-1) !important; background-clip: text !important)
 discord.com##[class*='convenienceGlow']::after
 
 !! Status text field in profile
-discord.com##:is(header, div[class^='profileHeader'], .user-profile-popout) div[class^='container'] svg[class^='addStatusIcon']:upward(3)
+discord.com##:is(header, div[class*='profileHeader'], .user-profile-popout) div[class*='container'] svg[class*='addStatusIcon']:upward(3)
 
 !! Voice channel border glow
-discord.com##div[class^='voiceChannelHighlightGlow']
+discord.com##div[class*='voiceChannelHighlightGlow']
