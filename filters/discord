@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Block Discord stuff
-! Last modified: 2025-12-16
+! Last modified: 2025-12-17
 ! Expires: 7 days
 ! Homepage: https://code.mschae23.de/mschae23/userstyles
 ! License: CC0
@@ -47,7 +47,8 @@ discord.com##div[class^='imageContainer'] > div[class^='hoverButtonGroup']:not(:
 discord.com##div[class*='linkButton'] > a[data-list-item-id*='shop']
 
 !! Nameplates in member list
-discord.com##div[class^='member'] > div[class*='nameplated'] > :not(div[class^='memberInner'])
+discord.com##div[class*='member'] > div[class$='nameplated'] > :not(div[class^='memberInner'])
+||https://cdn.discordapp.com/assets/collectibles/nameplates/
 
 !! Clan tags
 discord.com##:is(span[id^='message-username'], div[id^='message-reply-context']) > span:has(span[class*='clanTagChiplet'])
