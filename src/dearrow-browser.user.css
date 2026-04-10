@@ -1,10 +1,10 @@
 /* ==UserStyle==
 @name           DeArrow browser
 @namespace      mschae23.de
-@version        1.7.4
+@version        1.7.5
 @description    Dark mode for DeArrow browser
 @author         mschae23
-@license        MIT
+@license        AGPL-3.0-only
 @updateURL      https://github.com/mschae23/userstyles/raw/master/src/dearrow-browser.user.css
 ==/UserStyle== */
 
@@ -55,7 +55,7 @@
         text-align: left;
     }
 
-    td > br {
+    table:not(.warnings) td > br {
         display: none;
     }
 
