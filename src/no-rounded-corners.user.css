@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.8.4
+@version        1.8.5
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -194,7 +194,11 @@
 }
 
 @-moz-document domain("discord.com") {
-    div[class*='avatar'] svg > foreignObject, #guild-list-unread-dms svg > foreignObject, div[class*='profileHeader'] svg > foreignObject, .user-profile-popout svg > foreignObject {
+    div[class*='avatar'] svg > foreignObject,
+    #guild-list-unread-dms svg > foreignObject,
+    div[class*='profileHeader'] svg > foreignObject,
+    .user-profile-popout svg > foreignObject,
+    .user-profile-sidebar svg > foreignObject {
         mask: none;
     }
 }
