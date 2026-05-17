@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.8.5
+@version        1.9.0
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -198,7 +198,8 @@
     #guild-list-unread-dms svg > foreignObject,
     div[class*='profileHeader'] svg > foreignObject,
     .user-profile-popout svg > foreignObject,
-    .user-profile-sidebar svg > foreignObject {
+    .user-profile-sidebar svg > foreignObject,
+    div[class*='stack'] svg > foreignObject {
         mask: none;
     }
 }
