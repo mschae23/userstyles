@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.9.1
+@version        1.9.2
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -200,7 +200,8 @@
     .user-profile-popout svg > foreignObject,
     .user-profile-sidebar svg > foreignObject,
     div[class*='stack'] svg > foreignObject,
-    .vc-typing-user svg > foreignObject {
+    .vc-typing-user svg > foreignObject,
+    svg[class*='callAvatarMask'] > foreignObject {
         mask: none;
     }
 }
