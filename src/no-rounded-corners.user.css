@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.9.3
+@version        1.9.4
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -73,16 +73,16 @@
         border-radius: 0;
     }
 
-    yt-chip-cloud-renderer:not([no-top-margin]) yt-chip-cloud-chip-renderer.yt-chip-cloud-renderer {
+    yt-chip-cloud-renderer[no-top-margin] yt-chip-cloud-chip-renderer.yt-chip-cloud-renderer {
         margin-left: -1px;
         margin-right: -1px;
     }
 
-    yt-chip-cloud-renderer:not([no-top-margin]) yt-chip-cloud-chip-renderer.yt-chip-cloud-renderer:first-child {
+    yt-chip-cloud-renderer[no-top-margin] yt-chip-cloud-chip-renderer.yt-chip-cloud-renderer:first-child {
         margin-left: 0;
     }
 
-    yt-chip-cloud-renderer:not([no-top-margin]) yt-chip-cloud-chip-renderer.yt-chip-cloud-renderer:last-child {
+    yt-chip-cloud-renderer[no-top-margin] yt-chip-cloud-chip-renderer.yt-chip-cloud-renderer:last-child {
         margin-right: 0;
     }
 
@@ -92,8 +92,8 @@
     }
 
     :is(yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected]) .ytChipShapeChip {
-        background-color: var(--yt-spec-text-primary);
-        color: var(--yt-spec-text-primary-inverse);
+        background-color: var(--yt-spec-text-primary, var(--ytd-searchbox-background));
+        color: var(--yt-spec-text-primary-inverse, var(--tffc2fd3a644f6275));
     }
 
     :is(yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"], yt-chip-cloud-chip-renderer[chip-style="STYLE_COLOR_RED"], yt-chip-cloud-chip-renderer[chip-style="STYLE_COLOR_GREEN"], yt-chip-cloud-chip-renderer[chip-style="STYLE_COLOR_BLUE"], yt-chip-cloud-chip-renderer[chip-style="STYLE_REFRESH_TO_NOVEL_CHIP"]) .ytChipShapeChip {
@@ -101,12 +101,20 @@
         border: 1px solid var(--ytd-searchbox-legacy-border-color);
     }
 
-    .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal {
+    .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal, .ytSpecButtonShapeNextMono.ytSpecButtonShapeNextTonal {
         background-color: var(--ytd-searchbox-background);
         border: 1px solid var(--ytd-searchbox-legacy-border-color);
     }
 
-    .yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--segmented-start::after {
+    like-button-view-model .ytSpecButtonShapeNextMono.ytSpecButtonShapeNextTonal {
+        border-right: none;
+    }
+
+    .contribYtLightShapeHost {
+        display: none;
+    }
+
+    .yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--segmented-start::after, .ytSpecButtonShapeNextSizeM.ytSpecButtonShapeNextSegmentedStart::after {
         content: unset;
     }
 
