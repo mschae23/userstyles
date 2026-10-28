@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           No rounded corners
 @namespace      https://mschae23.de
-@version        1.9.5
+@version        1.9.6
 @description    Sets the border-radius property to 0
 @author         mschae23
 @license        CC0
@@ -9,9 +9,9 @@
 ==/UserStyle== */
 
 *,
-    /* Generic */ .rounded, .rounded-1, .rounded-2, .rounded-left-1, .rounded-left-2,
+    /* Generic */ .rounded, .rounded-1, .rounded-2, .rounded-left-1, .rounded-left-2, .tw-rounded-t,
     /* GitHub */ .circle, .avatar-user,
-    /* Forgejo */ div.issue-state-label {
+    /* Forgejo */ div.issue-state-label, .repository .clone-panel > button:first-of-type, .repository .clone-panel > button:last-of-type {
     border-radius: 0 !important;
 }
 
